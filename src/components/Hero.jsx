@@ -1,5 +1,9 @@
 const Hero = () => {
-  return <div>Hero</div>;
+  return (
+    <div className="bg-amber-600 h-[2000px]">
+      Hero sdvsdfgsafdgasgasfgadgadfgdfagdafgadfgadfgadfgafgag
+    </div>
+  );
 };
 
 export default Hero;
