@@ -3,6 +3,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-primary: hsl(265, 70%, 50%);
+  --color-primary: hsl(265, 70%, 60%);
   --color-bg-background: hsl(260, 50%, 98%);
+}
+
+.dark {
+  --color-bg-background: hsl(251, 28%, 12%);
 }
