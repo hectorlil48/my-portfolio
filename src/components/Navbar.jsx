@@ -44,8 +44,36 @@ const Navbar = () => {
       {isOpen && (
         <div
           id="mobile-menu"
-          className="h-110 bg-amber-600 md:hidden shadow-lg rounded-b-lg mt-1 animate-fade-in"
-        ></div>
+          className="bg-background text-heading p-5 sm:p-6 md:hidden shadow-lg rounded-b-lg animate-fade-in"
+        >
+          <ul className="space-y-5 font-medium text-base">
+            <li>
+              <a href="" className="hover:text-primary transition-colors">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="" className="hover:text-primary transition-colors">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="" className="hover:text-primary transition-colors">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="" className="hover:text-primary transition-colors">
+                Experience
+              </a>
+            </li>
+            <li>
+              <a href="" className="hover:text-primary transition-colors">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       )}
     </nav>
   );
