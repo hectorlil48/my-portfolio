@@ -26,12 +26,15 @@ const Navbar = () => {
             <ToggleLightDark />
             <button
               onClick={toggleMenu}
+              aria-label={isOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
               className="text-gray-400 hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
               {isOpen ? (
-                <XMarkIcon className="h-[26px] w-[26px]" />
+                <XMarkIcon className="h-[26px] w-[26px] cursor-pointer" />
               ) : (
-                <Bars3Icon className="h-7 w-7" />
+                <Bars3Icon className="h-7 w-7 cursor-pointer" />
               )}
             </button>
           </div>
@@ -39,7 +42,10 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="h-110 bg-amber-600 md:hidden shadow-lg rounded-b-lg mt-1 animate-fade-in"></div>
+        <div
+          id="mobile-menu"
+          className="h-110 bg-amber-600 md:hidden shadow-lg rounded-b-lg mt-1 animate-fade-in"
+        ></div>
       )}
     </nav>
   );
