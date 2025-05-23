@@ -1,4 +1,4 @@
-import { Bars3Icon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import ToggleLightDark from "./ToggleLightDark";
 import { useState } from "react";
 
@@ -28,14 +28,18 @@ const Navbar = () => {
               onClick={toggleMenu}
               className="text-gray-400 hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
             >
-              <Bars3Icon className="h-7 w-7" />
+              {isOpen ? (
+                <XMarkIcon className="h-[26px] w-[26px]" />
+              ) : (
+                <Bars3Icon className="h-7 w-7" />
+              )}
             </button>
           </div>
         </div>
       </div>
 
       {isOpen && (
-        <div className="h-110 bg-amber-600 md:hidden shadow-lg rounded-b-lg mt-1 "></div>
+        <div className="h-110 bg-amber-600 md:hidden shadow-lg rounded-b-lg mt-1 animate-fade-in"></div>
       )}
     </nav>
   );

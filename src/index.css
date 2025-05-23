@@ -5,6 +5,19 @@
 @theme {
   --color-primary: hsl(265, 70%, 60%);
   --color-bg-background: hsl(260, 50%, 98%);
+
+  --animate-fade-in: fade-in 0.5s ease-out forwards;
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 .dark {
