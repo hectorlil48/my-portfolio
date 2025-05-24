@@ -8,14 +8,14 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-transparent fixed top-0 w-full z-50 transition-all duration-300 py-4">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-14">
+    <nav className="fixed top-0 z-50 w-full bg-transparent py-4 transition-all duration-300">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-14 items-center justify-between">
           <div>
-            <h1 className="text-2xl font-bold text-primary ">
+            <h1 className="text-primary text-2xl font-bold">
               <a
                 href="/"
-                className="focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                className="focus-visible:ring-primary focus:outline-none focus-visible:ring-2"
               >
                 Ramirez.
               </a>
@@ -29,7 +29,7 @@ const Navbar = () => {
               aria-label={isOpen ? "Close menu" : "Open menu"}
               aria-expanded={isOpen}
               aria-controls="mobile-menu"
-              className="text-gray-400 hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              className="hover:text-primary focus-visible:ring-primary text-gray-400 focus:outline-none focus-visible:ring-2"
             >
               {isOpen ? (
                 <XMarkIcon className="h-[26px] w-[26px] cursor-pointer" />
@@ -44,9 +44,9 @@ const Navbar = () => {
       {isOpen && (
         <div
           id="mobile-menu"
-          className="bg-background text-heading p-5 sm:p-6 md:hidden shadow-lg rounded-b-lg animate-fade-in"
+          className="bg-background text-heading animate-fade-in rounded-b-lg p-5 shadow-lg sm:p-6 md:hidden"
         >
-          <ul className="space-y-5 font-medium text-base">
+          <ul className="space-y-5 text-base font-medium">
             <li>
               <a href="" className="hover:text-primary transition-colors">
                 About
