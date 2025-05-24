@@ -23,13 +23,13 @@ const ToggleLightDark = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="text-gray-400 hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+      className="hover:text-primary focus-visible:ring-primary dark:text-heading flex items-center text-gray-400 focus:outline-none focus-visible:ring-2"
       aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
     >
       {theme === "light" ? (
         <MoonIcon className="h-5 w-5 cursor-pointer" />
       ) : (
-        <SunIcon className="h-5 w-5 cursor-pointer" />
+        <SunIcon className="h-6 w-6 cursor-pointer" />
       )}
     </button>
   );
