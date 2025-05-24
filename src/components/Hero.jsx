@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="bg-amber-600 h-[2000px] mt-20">
+    <div className="mx-auto h-[2000px] max-w-7xl pt-60">
       Hero sdvsdfgsafdgasgasfgadgadfgdfagdafgadfgadfgadfgafgag
     </div>
   );

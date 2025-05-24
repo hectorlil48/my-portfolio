@@ -6,7 +6,7 @@
 @theme {
   --color-primary: hsl(265, 70%, 60%);
   --color-heading: hsl(249, 25%, 27%);
-  --color-bg-background: hsl(260, 50%, 98%);
+  --color-background: hsl(260, 50%, 98%);
 
   --font-inter: "Inter", sans-serif;
 
