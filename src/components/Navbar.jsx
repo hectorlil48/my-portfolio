@@ -34,7 +34,7 @@ const Navbar = () => {
           <div>
             <h1 className="text-primary text-2xl font-bold">
               <a
-                href="/"
+                href="#home"
                 className="focus-visible:ring-primary focus:outline-none focus-visible:ring-2"
               >
                 Ramirez.
@@ -68,7 +68,7 @@ const Navbar = () => {
         >
           <ul className="space-y-5 text-base font-medium">
             <li>
-              <a href="" className="hover:text-primary transition-colors">
+              <a href="#about" className="hover:text-primary transition-colors">
                 About
               </a>
             </li>
