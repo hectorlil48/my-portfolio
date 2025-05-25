@@ -64,7 +64,7 @@ const Navbar = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-14 items-center justify-between">
           <div>
-            <h1 className="text-primary text-2xl font-bold">
+            <span className="text-primary text-2xl font-bold">
               <a
                 href="#home"
                 aria-current="page"
@@ -73,7 +73,7 @@ const Navbar = () => {
               >
                 Ramirez.
               </a>
-            </h1>
+            </span>
           </div>
 
           <div className="flex items-center justify-center gap-4 md:hidden">
@@ -97,7 +97,12 @@ const Navbar = () => {
             <li>
               <a
                 href="#about"
-                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-0 before:transition-all before:duration-300 hover:before:w-full ${activeId === "about" ? "before:w-full" : ""} `}
+                aria-current={activeId === "about" ? "page" : undefined}
+                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-full before:origin-left before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100 ${
+                  activeId === "about"
+                    ? "before:origin-left before:scale-x-100"
+                    : "before:origin-right before:scale-x-0"
+                }`}
               >
                 About
               </a>
@@ -105,7 +110,12 @@ const Navbar = () => {
             <li>
               <a
                 href="#skills"
-                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-0 before:transition-all before:duration-300 hover:before:w-full ${activeId === "skills" ? "before:w-full" : ""} `}
+                aria-current={activeId === "skills" ? "page" : undefined}
+                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-full before:origin-left before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100 ${
+                  activeId === "skills"
+                    ? "before:origin-left before:scale-x-100"
+                    : "before:origin-right before:scale-x-0"
+                }`}
               >
                 Skills
               </a>
@@ -113,7 +123,12 @@ const Navbar = () => {
             <li>
               <a
                 href="#projects"
-                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-0 before:transition-all before:duration-300 hover:before:w-full ${activeId === "projects" ? "before:w-full" : ""} `}
+                aria-current={activeId === "projects" ? "page" : undefined}
+                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-full before:origin-left before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100 ${
+                  activeId === "projects"
+                    ? "before:origin-left before:scale-x-100"
+                    : "before:origin-right before:scale-x-0"
+                }`}
               >
                 Projects
               </a>
@@ -121,7 +136,12 @@ const Navbar = () => {
             <li>
               <a
                 href="#experience"
-                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-0 before:transition-all before:duration-300 hover:before:w-full ${activeId === "experience" ? "before:w-full" : ""} `}
+                aria-current={activeId === "experience" ? "page" : undefined}
+                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-full before:origin-left before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100 ${
+                  activeId === "experience"
+                    ? "before:origin-left before:scale-x-100"
+                    : "before:origin-right before:scale-x-0"
+                }`}
               >
                 Experience
               </a>
@@ -129,7 +149,12 @@ const Navbar = () => {
             <li>
               <a
                 href="#contact"
-                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-0 before:transition-all before:duration-300 hover:before:w-full ${activeId === "contact" ? "before:w-full" : ""} `}
+                aria-current={activeId === "contact" ? "page" : undefined}
+                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-full before:origin-left before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100 ${
+                  activeId === "contact"
+                    ? "before:origin-left before:scale-x-100"
+                    : "before:origin-right before:scale-x-0"
+                }`}
               >
                 Contact
               </a>
@@ -147,51 +172,23 @@ const Navbar = () => {
           className="bg-background text-heading animate-fade-in rounded-b-lg p-5 shadow-lg transition-colors duration-300 sm:p-6 md:hidden"
         >
           <ul className="space-y-5 text-base font-medium">
-            <li>
-              <a
-                href="#about"
-                onClick={() => setIsOpen(false)}
-                className="hover:text-primary focus-visible:ring-primary transition-colors focus:outline-none focus-visible:ring-2"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                onClick={() => setIsOpen(false)}
-                className="hover:text-primary focus-visible:ring-primary transition-colors focus:outline-none focus-visible:ring-2"
-              >
-                Skills
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                onClick={() => setIsOpen(false)}
-                className="hover:text-primary focus-visible:ring-primary transition-colors focus:outline-none focus-visible:ring-2"
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                onClick={() => setIsOpen(false)}
-                className="hover:text-primary focus-visible:ring-primary transition-colors focus:outline-none focus-visible:ring-2"
-              >
-                Experience
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                onClick={() => setIsOpen(false)}
-                className="hover:text-primary focus-visible:ring-primary transition-colors focus:outline-none focus-visible:ring-2"
-              >
-                Contact
-              </a>
-            </li>
+            {[
+              { href: "#about", label: "About" },
+              { href: "#skills", label: "Skills" },
+              { href: "#projects", label: "Projects" },
+              { href: "#experience", label: "Experience" },
+              { href: "#contact", label: "Contact" },
+            ].map(({ href, label }) => (
+              <li key={href}>
+                <a
+                  href={href}
+                  onClick={() => setIsOpen(false)}
+                  className="hover:text-primary focus-visible:ring-primary transition-colors focus:outline-none focus-visible:ring-2"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       )}
