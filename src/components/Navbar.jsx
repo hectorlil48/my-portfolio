@@ -1,10 +1,21 @@
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import ToggleLightDark from "./ToggleLightDark";
+import useScrollSpy from "../hooks/useScrollSpy";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const sectionIds = [
+    "home",
+    "about",
+    "skills",
+    "projects",
+    "experience",
+    "contact",
+  ];
+  const activeId = useScrollSpy(sectionIds);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -86,7 +97,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#about"
-                className="hover:text-primary border-primary border-b-3 transition-colors"
+                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-0 before:transition-all before:duration-300 hover:before:w-full ${activeId === "about" ? "before:w-full" : ""} `}
               >
                 About
               </a>
@@ -94,7 +105,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#skills"
-                className="hover:text-primary transition-colors"
+                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-0 before:transition-all before:duration-300 hover:before:w-full ${activeId === "skills" ? "before:w-full" : ""} `}
               >
                 Skills
               </a>
@@ -102,7 +113,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#projects"
-                className="hover:text-primary transition-colors"
+                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-0 before:transition-all before:duration-300 hover:before:w-full ${activeId === "projects" ? "before:w-full" : ""} `}
               >
                 Projects
               </a>
@@ -110,7 +121,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#experience"
-                className="hover:text-primary transition-colors"
+                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-0 before:transition-all before:duration-300 hover:before:w-full ${activeId === "experience" ? "before:w-full" : ""} `}
               >
                 Experience
               </a>
@@ -118,7 +129,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#contact"
-                className="hover:text-primary transition-colors"
+                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-0 before:transition-all before:duration-300 hover:before:w-full ${activeId === "contact" ? "before:w-full" : ""} `}
               >
                 Contact
               </a>
