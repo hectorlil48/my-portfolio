@@ -1,5 +1,6 @@
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import ToggleLightDark from "./ToggleLightDark";
+import DesktopMenu from "./DesktopMenu";
 import useScrollSpy from "../hooks/useScrollSpy";
 import { useEffect, useState } from "react";
 
@@ -18,27 +19,6 @@ const Navbar = () => {
   const activeId = useScrollSpy(sectionIds);
 
   const toggleMenu = () => setIsOpen(!isOpen);
-
-  useEffect(() => {
-    let ticking = false;
-
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          const isScrolled = window.scrollY > 0;
-          setScrolled((prev) => {
-            if (prev !== isScrolled) return isScrolled;
-            return prev;
-          });
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   // 👇 Add this effect for Escape key when the menu is open
   useEffect(() => {
@@ -93,76 +73,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          <ul className="text-heading hidden items-center space-x-8 text-base font-medium md:flex">
-            <li>
-              <a
-                href="#about"
-                aria-current={activeId === "about" ? "page" : undefined}
-                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-full before:origin-left before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100 ${
-                  activeId === "about"
-                    ? "before:origin-left before:scale-x-100"
-                    : "before:origin-right before:scale-x-0"
-                }`}
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#skills"
-                aria-current={activeId === "skills" ? "page" : undefined}
-                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-full before:origin-left before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100 ${
-                  activeId === "skills"
-                    ? "before:origin-left before:scale-x-100"
-                    : "before:origin-right before:scale-x-0"
-                }`}
-              >
-                Skills
-              </a>
-            </li>
-            <li>
-              <a
-                href="#projects"
-                aria-current={activeId === "projects" ? "page" : undefined}
-                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-full before:origin-left before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100 ${
-                  activeId === "projects"
-                    ? "before:origin-left before:scale-x-100"
-                    : "before:origin-right before:scale-x-0"
-                }`}
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                href="#experience"
-                aria-current={activeId === "experience" ? "page" : undefined}
-                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-full before:origin-left before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100 ${
-                  activeId === "experience"
-                    ? "before:origin-left before:scale-x-100"
-                    : "before:origin-right before:scale-x-0"
-                }`}
-              >
-                Experience
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                aria-current={activeId === "contact" ? "page" : undefined}
-                className={`text-heading before:bg-primary relative px-1 py-1 transition-colors duration-300 before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-full before:origin-left before:scale-x-0 before:transition-transform before:duration-300 before:ease-in-out hover:before:scale-x-100 ${
-                  activeId === "contact"
-                    ? "before:origin-left before:scale-x-100"
-                    : "before:origin-right before:scale-x-0"
-                }`}
-              >
-                Contact
-              </a>
-            </li>
-            <li>
-              <ToggleLightDark />
-            </li>
-          </ul>
+          <DesktopMenu activeId={activeId} />
         </div>
       </div>
 
