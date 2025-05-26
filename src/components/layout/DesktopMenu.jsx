@@ -1,5 +1,5 @@
 // components/DesktopMenu.js
-import MenuLinks from "./MenuLinks";
+import MenuLinks from "../common/MenuLinks";
 import ToggleLightDark from "./ToggleLightDark";
 
 const DesktopMenu = ({ activeId }) => (

@@ -1,7 +1,8 @@
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import ToggleLightDark from "./ToggleLightDark";
 import DesktopMenu from "./DesktopMenu";
-import useScrollSpy from "../hooks/useScrollSpy";
+import MobileMenu from "./MobileMenu";
+import useScrollSpy from "../../hooks/useScrollSpy";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -19,6 +20,24 @@ const Navbar = () => {
   const activeId = useScrollSpy(sectionIds);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const isScrolled = window.scrollY > 0;
+          setScrolled((prev) => (prev !== isScrolled ? isScrolled : prev));
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // 👇 Add this effect for Escape key when the menu is open
   useEffect(() => {
@@ -78,30 +97,7 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div
-          id="mobile-menu"
-          className="bg-background text-heading animate-fade-in rounded-b-lg p-5 shadow-lg transition-colors duration-300 sm:p-6 md:hidden"
-        >
-          <ul className="space-y-5 text-base font-medium">
-            {[
-              { href: "#about", label: "About" },
-              { href: "#skills", label: "Skills" },
-              { href: "#projects", label: "Projects" },
-              { href: "#experience", label: "Experience" },
-              { href: "#contact", label: "Contact" },
-            ].map(({ href, label }) => (
-              <li key={href}>
-                <a
-                  href={href}
-                  onClick={() => setIsOpen(false)}
-                  className="hover:text-primary focus-visible:ring-primary transition-colors focus:outline-none focus-visible:ring-2"
-                >
-                  {label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <MobileMenu activeId={activeId} onClose={() => setIsOpen(false)} />
       )}
     </nav>
   );
