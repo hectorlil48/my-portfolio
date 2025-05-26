@@ -33,6 +33,23 @@ const Hero = () => {
           I build responsive, full-stack web apps with React, Node.js, and
           Django. Focused on clean code, modern UI, and solving real problems.
         </p>
+
+        <div className="flex items-center justify-center gap-4">
+          <a
+            href="#contact"
+            aria-label="Go to contact section"
+            className="bg-primary text-main-btn rounded-lg px-4 py-2 text-base font-medium"
+          >
+            Contact Me
+          </a>
+          <a
+            href="#projects"
+            aria-label="Go to projects section"
+            className="rounded-lg border px-4 py-2"
+          >
+            View Projects
+          </a>
+        </div>
       </div>
       <div className="bg-primary h-[278px] rounded-2xl"></div>
     </section>
