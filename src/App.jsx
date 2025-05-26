@@ -10,12 +10,14 @@ const App = () => {
   return (
     <div className="bg-background dark:bg-background font-inter min-h-screen transition-colors duration-300">
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Experience />
-      <Contact />
+      <main className="pt-[90px]">
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Contact />
+      </main>
     </div>
   );
 };
