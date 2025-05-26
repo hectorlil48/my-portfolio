@@ -8,6 +8,7 @@
   --color-heading: hsl(249, 25%, 27%);
   --color-foreground: hsl(250, 25%, 40%);
   --color-main-btn: hsl(260, 40%, 98%);
+  --color-outline: hsl(260, 32%, 91%);
   --color-background: hsl(260, 50%, 98%);
 
   --font-inter: "Inter", sans-serif;
@@ -30,5 +31,6 @@
   --color-background: hsl(251, 28%, 12%);
   --color-heading: hsl(210, 40%, 98%);
   --color-main-btn: hsl(222, 47%, 11%);
+  --color-outline: hsl(217, 33%, 18%);
   --color-foreground: hsl(250, 8%, 75%);
 }

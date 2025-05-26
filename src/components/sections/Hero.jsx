@@ -38,14 +38,14 @@ const Hero = () => {
           <a
             href="#contact"
             aria-label="Go to contact section"
-            className="bg-primary text-main-btn rounded-lg px-4 py-2 text-base font-medium"
+            className="bg-primary text-main-btn rounded-lg px-4 py-[10px] text-base font-medium"
           >
             Contact Me
           </a>
           <a
             href="#projects"
             aria-label="Go to projects section"
-            className="rounded-lg border px-4 py-2"
+            className="border-outline text-heading rounded-lg border-2 px-4 py-2"
           >
             View Projects
           </a>
