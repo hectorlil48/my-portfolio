@@ -1,4 +1,4 @@
-import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
+import { Sun, Moon } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const ToggleLightDark = () => {
@@ -27,9 +27,9 @@ const ToggleLightDark = () => {
       aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
     >
       {theme === "light" ? (
-        <MoonIcon className="h-5 w-5 cursor-pointer" />
+        <Moon className="h-5 w-5 cursor-pointer" />
       ) : (
-        <SunIcon className="h-6 w-6 cursor-pointer" />
+        <Sun className="h-5 w-5 cursor-pointer" />
       )}
     </button>
   );

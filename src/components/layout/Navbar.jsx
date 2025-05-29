@@ -1,4 +1,4 @@
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Menu, X } from "lucide-react";
 import ToggleLightDark from "./ToggleLightDark";
 import DesktopMenu from "./DesktopMenu";
 import MobileMenu from "./MobileMenu";
@@ -85,9 +85,9 @@ const Navbar = () => {
               className="hover:text-primary focus-visible:ring-primary dark:text-heading text-gray-400 focus:outline-none focus-visible:ring-2"
             >
               {isOpen ? (
-                <XMarkIcon className="h-[26px] w-[26px] cursor-pointer" />
+                <X className="h-[26px] w-[26px] cursor-pointer" />
               ) : (
-                <Bars3Icon className="h-[26px] w-[26px] cursor-pointer" />
+                <Menu className="h-[26px] w-[26px] cursor-pointer" />
               )}
             </button>
           </div>
