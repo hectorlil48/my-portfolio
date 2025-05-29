@@ -65,16 +65,26 @@ const Hero = () => {
             >
               <GithubIcon className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6" />
             </a>
-            <a href="">
+            <a
+              href="https://www.linkedin.com/in/hector-ramirez-6a6509170/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Linkedin className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6" />
             </a>
-            <a href="">
+            <a href="mailto:hramir94@gmail.com" aria-label="Email">
               <Mail className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6" />
             </a>
           </div>
         </div>
       </div>
-      <div className="bg-primary h-[278px] rounded-2xl"></div>
+      <div className="bg-code-bg rounded-2xl border border-gray-200 p-6 shadow-sm shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px]">
+        <div className="flex space-x-2">
+          <div className="h-3 w-3 rounded-full bg-red-500"></div>
+          <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
+          <div className="h-3 w-3 rounded-full bg-green-500"></div>
+        </div>
+      </div>
     </section>
   );
 };
