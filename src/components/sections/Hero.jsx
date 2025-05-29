@@ -38,38 +38,38 @@ const Hero = () => {
           Django. Focused on clean code, modern UI, and solving real problems.
         </p>
 
-        <div className="flex flex-col items-center justify-center gap-6">
+        <div className="mt-4 flex flex-col items-center justify-center gap-6">
           <div className="flex flex-row gap-4">
             <a
               href="#contact"
               aria-label="Go to contact section"
-              className="bg-primary text-main-btn rounded-lg px-4 py-[10px] text-base font-medium"
+              className="bg-primary text-main-btn rounded-lg px-4 py-[10px] text-base font-medium duration-300 hover:scale-105 hover:shadow-md"
             >
               Contact Me
             </a>
             <a
               href="#projects"
               aria-label="Go to projects section"
-              className="border-outline text-heading rounded-lg border-2 px-4 py-2 text-base font-medium"
+              className="border-outline text-heading hover:bg-primary hover:text-main-btn hover:border-primary rounded-lg border-2 px-4 py-2 text-base font-medium transition-colors duration-300 hover:scale-105 hover:shadow-md"
             >
               View Projects
             </a>
           </div>
 
-          <div className="flex h-10 flex-row items-center gap-6">
+          <div className="text-foreground flex h-10 flex-row items-center gap-8">
             <a
               href="https://github.com/hectorlil48"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
             >
-              <GithubIcon className="h-7 w-7" />
+              <GithubIcon className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6" />
             </a>
             <a href="">
-              <Linkedin />
+              <Linkedin className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6" />
             </a>
             <a href="">
-              <Mail />
+              <Mail className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6" />
             </a>
           </div>
         </div>
