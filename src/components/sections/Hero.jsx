@@ -5,9 +5,9 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="font-inter mx-auto flex min-h-screen max-w-7xl flex-col gap-10 px-4 py-24"
+      className="font-inter mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-between gap-10 px-8 py-24 lg:flex-row"
     >
-      <div className="flex flex-col gap-5 text-center">
+      <div className="flex max-w-xl flex-col space-y-6 text-center lg:text-left">
         <span className="text-primary text-sm font-medium transition-[font-size] duration-300 md:text-base">
           Hello, I'm
         </span>
@@ -38,7 +38,7 @@ const Hero = () => {
           Django. Focused on clean code, modern UI, and solving real problems.
         </p>
 
-        <div className="mt-4 flex flex-col items-center justify-center gap-6">
+        <div className="mt-4 flex flex-col items-center justify-center gap-6 md:flex-row lg:justify-start">
           <div className="flex flex-row gap-4">
             <a
               href="#contact"
@@ -50,37 +50,37 @@ const Hero = () => {
             <a
               href="#projects"
               aria-label="Go to projects section"
-              className="border-outline text-heading hover:bg-primary hover:text-main-btn hover:border-primary rounded-lg border-2 px-4 py-2 text-base font-medium transition-colors duration-300 hover:scale-105 hover:shadow-md"
+              className="border-outline text-heading hover:bg-primary hover:text-main-btn hover:border-primary rounded-lg border px-4 py-2 text-base font-medium transition-colors duration-300 hover:scale-105 hover:shadow-md"
             >
               View Projects
             </a>
           </div>
 
-          <div className="text-foreground flex h-10 flex-row items-center gap-8">
+          <div className="text-foreground flex h-10 flex-row items-center gap-7 md:ml-4">
             <a
               href="https://github.com/hectorlil48"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
             >
-              <GithubIcon className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6" />
+              <GithubIcon className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6 lg:h-7 lg:w-7" />
             </a>
             <a
               href="https://www.linkedin.com/in/hector-ramirez-6a6509170/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Linkedin className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6" />
+              <Linkedin className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6 lg:h-7 lg:w-7" />
             </a>
             <a href="mailto:hramir94@gmail.com" aria-label="Email">
-              <Mail className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6" />
+              <Mail className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6 lg:h-7 lg:w-7" />
             </a>
           </div>
         </div>
       </div>
       <div
         role="presentation"
-        className="bg-code-bg rounded-2xl border border-gray-200 p-6 shadow-sm shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] transition-colors duration-300"
+        className="bg-code-bg w-full max-w-md rounded-2xl border border-gray-200 p-6 shadow-sm shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] transition-colors duration-300"
       >
         <div className="mb-6 flex items-center justify-between">
           <div className="flex space-x-2">
