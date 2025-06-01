@@ -1,4 +1,4 @@
-import Intro from "../layout/Intro";
+import Intro from "./Intro";
 
 const Hero = () => {
   return (
