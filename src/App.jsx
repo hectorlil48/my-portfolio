@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="bg-background dark:bg-background font-inter min-h-screen transition-colors duration-300">
       <Navbar />
-      <main className="pt-[90px]">
+      <main className="pt-[90px] lg:pt-0">
         <Hero />
         <About />
         <Skills />
