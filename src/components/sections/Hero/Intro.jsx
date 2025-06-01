@@ -1,4 +1,4 @@
-import TypewriterComponent from "typewriter-effect";
+import TypewriterTitle from "./TypewriterTitle";
 import CTAButtons from "./CTAButtons";
 
 const Intro = () => {
@@ -11,23 +11,7 @@ const Intro = () => {
         Hector <span className="text-primary">Ramirez</span>
       </h1>
 
-      <div
-        aria-live="polite"
-        className="text-foreground text-2xl font-medium md:text-2xl"
-      >
-        <TypewriterComponent
-          options={{
-            strings: [
-              "Full-Stack Developer",
-              "React & Django Enthusiast",
-              "Builder of Modern Web Apps",
-              "Always Learning, Always Building",
-            ],
-            autoStart: true,
-            loop: true,
-          }}
-        />
-      </div>
+      <TypewriterTitle />
 
       <p className="text-foreground">
         I build responsive, full-stack web apps with React, Node.js, and Django.
