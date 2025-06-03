@@ -10,9 +10,9 @@ const TypewriterTitle = () => {
         options={{
           strings: [
             "Full-Stack Developer",
-            "React & Django Enthusiast",
+            "React Enthusiast",
             "Builder of Modern Web Apps",
-            "Always Learning, Always Building",
+            "Learning Never Stops",
           ],
           autoStart: true,
           loop: true,
