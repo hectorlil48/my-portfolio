@@ -14,7 +14,7 @@ const CTAButtons = () => {
         <a
           href="#projects"
           aria-label="Go to projects section"
-          className="border-outline text-heading hover:bg-primary hover:text-main-btn hover:border-primary rounded-lg border px-4 py-2 text-base font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
+          className="border-outline text-heading hover:bg-primary hover:text-main-btn hover:border-primary rounded-lg border-2 px-4 py-2 text-base font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
         >
           View Projects
         </a>
