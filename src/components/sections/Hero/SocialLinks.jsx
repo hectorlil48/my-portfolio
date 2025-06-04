@@ -15,6 +15,7 @@ const SocialLinks = () => {
         href="https://www.linkedin.com/in/hector-ramirez-6a6509170/"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="LinkedIn Profile"
       >
         <Linkedin className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6 lg:h-7 lg:w-7" />
       </a>

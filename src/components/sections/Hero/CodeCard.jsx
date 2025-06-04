@@ -9,15 +9,18 @@ const CodeCard = () => {
       <div className="mb-6 flex items-center justify-between">
         <div className="flex space-x-2">
           <div
-            aria-hidden="red circle"
+            aria-label="red circle"
+            aria-hidden="true"
             className="h-3 w-3 rounded-full bg-red-500"
           ></div>
           <div
-            aria-hidden="yellow circle"
+            aria-label="yellow circle"
+            aria-hidden="true"
             className="h-3 w-3 rounded-full bg-yellow-500"
           ></div>
           <div
-            aria-hidden="green circle"
+            aria-label="green circle"
+            aria-hidden="true"
             className="h-3 w-3 rounded-full bg-green-500"
           ></div>
         </div>
