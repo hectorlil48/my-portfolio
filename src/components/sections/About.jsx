@@ -24,7 +24,7 @@ const About = () => {
           className="flex-1"
         >
           <img
-            src="public/profilePic.jpeg"
+            src="/profilePic.jpeg"
             alt="Portrait of Hector Ramirez"
             title="Hector Ramirez"
             className="border-primary h-64 w-64 rounded-full border-6 object-cover transition-all duration-300 sm:h-80 sm:w-80"
