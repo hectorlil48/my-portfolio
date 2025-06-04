@@ -10,7 +10,7 @@ const About = () => {
           <h2 className="text-heading mb-[6px] text-4xl font-bold transition-colors duration-300">
             About Me
           </h2>
-          <div className="bg-primary h-[5px] w-14 rounded"></div>
+          <div className="bg-primary h-[5px] w-10 rounded"></div>
         </div>
       </header>
 

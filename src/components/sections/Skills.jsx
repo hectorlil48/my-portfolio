@@ -1,10 +1,15 @@
 const Skills = () => {
   return (
-    <div id="skills" className="h-[1500px] pt-30">
-      <div className="mx-auto max-w-7xl border bg-green-400">
-        <h1>Skills</h1>
-      </div>
-    </div>
+    <section id="skills" className="mx-auto max-w-6xl px-6 py-40">
+      <header className="mb-12 lg:mb-14">
+        <div>
+          <h2 className="text-heading mb-[6px] text-4xl font-bold transition-colors duration-300">
+            Skills
+          </h2>
+          <div className="bg-primary h-[5px] w-10 rounded"></div>
+        </div>
+      </header>
+    </section>
   );
 };
 
