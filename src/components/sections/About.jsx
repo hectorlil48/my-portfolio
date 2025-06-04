@@ -1,4 +1,6 @@
+// components/About.jsx
 import { Download, FileText } from "lucide-react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -14,19 +16,31 @@ const About = () => {
 
       <div className="flex flex-col items-center justify-center space-y-6 lg:flex-row lg:justify-start lg:space-y-0 lg:space-x-8">
         {/* Image */}
-        <div className="flex-1">
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex-1"
+        >
           <img
             src="public/profilePic.jpeg"
-            alt="profile picture"
-            className="border-primary h-64 w-64 rounded-full border-[6px] object-cover shadow-md transition-all duration-300 sm:h-80 sm:w-80"
+            alt="Portrait of Hector Ramirez"
+            title="Hector Ramirez"
+            className="border-primary h-64 w-64 rounded-full border-6 object-cover transition-all duration-300 sm:h-80 sm:w-80"
           />
-        </div>
+        </motion.div>
 
         {/* Text */}
-        <div className="max-w-3xl flex-2">
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="max-w-3xl flex-2"
+        >
           <div className="mb-3 flex items-center gap-2">
             <FileText className="text-primary h-[22px] w-[22px] stroke-[2.2]" />
-
             <h3 className="text-heading text-xl font-semibold transition-colors duration-300">
               Bio
             </h3>
@@ -43,22 +57,23 @@ const About = () => {
             energized and inspired.
           </p>
 
+          {/* Download Resume */}
           <div className="flex items-center justify-center transition-all duration-300 lg:justify-start">
             <a
-              href=""
+              href="/resume.pdf"
               download
               aria-label="Download resume"
-              className="bg-primary text-main-btn inline-block rounded-xl p-4 text-lg font-semibold transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md"
+              className="group bg-primary text-main-btn inline-block rounded-xl p-4 text-lg font-semibold transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md"
             >
               <div className="flex items-center gap-2">
-                <Download className="h-5 w-5 stroke-[2.5]" />
+                <Download className="h-5 w-5 stroke-[2.5] transition-transform group-hover:rotate-12" />
                 <span className="leading-none">
                   Download R&eacute;sum&eacute;
                 </span>
               </div>
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
