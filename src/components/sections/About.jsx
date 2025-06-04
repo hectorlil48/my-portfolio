@@ -1,11 +1,13 @@
-import { Download } from "lucide-react";
+import { Download, FileText } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="mx-auto max-w-6xl px-4">
-      <header className="mb-12">
+    <section id="about" className="mx-auto max-w-6xl px-6 py-40">
+      <header className="mb-12 lg:mb-14">
         <div>
-          <h2 className="text-heading text-4xl font-bold">About Me</h2>
+          <h2 className="text-heading mb-[6px] text-4xl font-bold transition-colors duration-300">
+            About Me
+          </h2>
           <div className="bg-primary h-[5px] w-14 rounded"></div>
         </div>
       </header>
@@ -14,15 +16,22 @@ const About = () => {
         {/* Image */}
         <div className="flex-1">
           <img
-            src="public/IMG_2725-min.jpeg"
+            src="public/profilePic.jpeg"
             alt="profile picture"
-            className="h-48 w-48 rounded-full object-cover sm:h-64 sm:w-64 lg:h-80 lg:w-80"
+            className="border-primary h-64 w-64 rounded-full border-[6px] object-cover shadow-md transition-all duration-300 sm:h-80 sm:w-80"
           />
         </div>
 
         {/* Text */}
-        <div className="max-w-2xl flex-2 space-y-6">
-          <p className="text-foreground">
+        <div className="max-w-3xl flex-2">
+          <div className="mb-3 flex items-center gap-2">
+            <FileText className="text-primary h-[22px] w-[22px] stroke-[2.2]" />
+
+            <h3 className="text-heading text-xl font-semibold transition-colors duration-300">
+              Bio
+            </h3>
+          </div>
+          <p className="text-foreground mb-6">
             I’m a self-taught full-stack developer skilled in the MERN stack and
             Tailwind CSS, building clean, responsive web apps with real-world
             impact. Before tech, I worked long, demanding shifts as a forklift
@@ -34,17 +43,21 @@ const About = () => {
             energized and inspired.
           </p>
 
-          <a
-            href=""
-            className="bg-primary text-main-btn inline-block rounded-xl px-6 py-4 text-lg font-semibold transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
-          >
-            <div className="flex items-center justify-center gap-2">
-              <Download className="h-5 w-5 -translate-y-[1px] stroke-[2.5] align-middle" />
-              <span className="leading-none">
-                Download R&eacute;sum&eacute;
-              </span>
-            </div>
-          </a>
+          <div className="flex items-center justify-center transition-all duration-300 lg:justify-start">
+            <a
+              href=""
+              download
+              aria-label="Download resume"
+              className="bg-primary text-main-btn inline-block rounded-xl p-4 text-lg font-semibold transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md"
+            >
+              <div className="flex items-center gap-2">
+                <Download className="h-5 w-5 stroke-[2.5]" />
+                <span className="leading-none">
+                  Download R&eacute;sum&eacute;
+                </span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
