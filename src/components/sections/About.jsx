@@ -45,7 +45,7 @@ const About = () => {
               Bio
             </h3>
           </div>
-          <p className="text-foreground mb-6">
+          <p className="text-foreground mb-8">
             I’m a self-taught full-stack developer skilled in the MERN stack and
             Tailwind CSS, building clean, responsive web apps with real-world
             impact. Before tech, I worked long, demanding shifts as a forklift
