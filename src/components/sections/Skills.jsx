@@ -8,6 +8,8 @@ const Skills = () => {
           </h2>
           <div className="bg-primary h-[5px] w-10 rounded"></div>
         </div>
+
+        <p></p>
       </header>
     </section>
   );
