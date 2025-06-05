@@ -4,12 +4,15 @@ import CTAButtons from "./CTAButtons";
 const Intro = () => {
   return (
     <header className="flex max-w-xl flex-col space-y-6 text-center lg:text-left">
-      <span className="text-primary text-sm font-medium transition-[font-size] duration-300 md:text-base">
+      <span className="text-primary text-sm font-medium md:text-base">
         Hello, I'm
       </span>
-      <h1 className="text-heading text-4xl font-bold transition-[font-size] duration-300 md:text-5xl lg:text-6xl">
+      <h1 className="text-heading text-4xl font-bold md:text-5xl lg:text-6xl">
         Hector <span className="text-primary">Ramirez</span>
       </h1>
+
+      {/* Accessible and fast-loading fallback */}
+      <strong className="sr-only">Full-Stack Developer</strong>
 
       <TypewriterTitle />
 

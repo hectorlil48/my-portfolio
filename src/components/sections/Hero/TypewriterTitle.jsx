@@ -6,7 +6,7 @@ const TypewriterTitle = () => {
     <motion.div
       aria-live="polite"
       className="text-foreground text-2xl font-medium md:text-2xl"
-      initial={{ opacity: 0 }}
+      initial={false}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.8, duration: 0.6 }}
     >

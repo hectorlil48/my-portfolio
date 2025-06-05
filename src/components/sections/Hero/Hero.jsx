@@ -8,22 +8,20 @@ const Hero = () => {
       id="home"
       className="mx-auto flex min-h-screen max-w-6xl flex-col items-center gap-12 px-6 py-20 lg:flex-row lg:gap-10 lg:px-8"
     >
+      {/* Left (Intro) */}
       <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="flex-1"
+        initial={false}
+        animate={{ opacity: 1, x: 0 }}
+        className="w-full"
       >
         <Intro />
       </motion.div>
 
+      {/* Right (CodeCard) */}
       <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
-        className="flex-1"
+        initial={false}
+        animate={{ opacity: 1, x: 0 }}
+        className="w-full"
       >
         <CodeCard />
       </motion.div>
