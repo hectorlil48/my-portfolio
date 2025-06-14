@@ -1,3 +1,6 @@
+import { Code } from "lucide-react";
+import { SiJavascript } from "react-icons/si";
+
 const Skills = () => {
   return (
     <section id="skills" className="mx-auto max-w-6xl px-6 py-24">
@@ -15,8 +18,22 @@ const Skills = () => {
         </p>
       </header>
 
-      <div>
-        <div className="bg-code-bg border-skill-border hover:border-primary/30 rounded-lg border p-6 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md"></div>
+      <div className="text-heading">
+        <div className="bg-code-bg border-skill-border hover:border-primary/30 rounded-lg border p-6 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
+          <div className="mb-4 flex items-center gap-3">
+            <div className="bg-primary/10 text-primary rounded-md p-2">
+              <Code className="h-5 w-5" />
+            </div>
+            <h3 className="text-lg font-semibold">Programming Languages</h3>
+          </div>
+
+          <div>
+            <span>
+              <SiJavascript />
+              JavaScript
+            </span>
+          </div>
+        </div>
       </div>
     </section>
   );
