@@ -14,12 +14,36 @@ import {
   SiSass,
   SiMongodb,
   SiMysql,
-  SiPostgresql,
+  SiPostman,
+  SiMacos,
+  SiFigma,
+  SiAdobe,
+  SiSketch,
 } from "react-icons/si";
 
-import { MdWeb } from "react-icons/md";
+import {
+  BiLogoPostgresql,
+  BiLayer,
+  BiCodeAlt,
+  BiMessageRoundedDetail,
+} from "react-icons/bi";
 
-import { BiLogoPostgresql } from "react-icons/bi";
+import {
+  FaDatabase,
+  FaToolbox,
+  FaGit,
+  FaGithub,
+  FaAws,
+  FaBug,
+  FaRocket,
+  FaRegLightbulb,
+} from "react-icons/fa6";
+
+import { FiLink } from "react-icons/fi";
+
+import { VscVscode, VscSymbolColor } from "react-icons/vsc";
+
+import { GiProgression } from "react-icons/gi";
 
 const Skills = () => {
   return (
@@ -78,7 +102,7 @@ const Skills = () => {
         <div className="bg-code-bg border-skill-border hover:border-primary/30 rounded-lg border p-6 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
           <div className="mb-4 flex items-center gap-3">
             <div className="bg-primary/10 text-primary rounded-md p-2">
-              <MdWeb className="h-5 w-5" />
+              <BiLayer className="h-5 w-5" />
             </div>
             <h3 className="text-lg font-semibold">Frameworks & Libraries</h3>
           </div>
@@ -124,7 +148,7 @@ const Skills = () => {
         <div className="bg-code-bg border-skill-border hover:border-primary/30 rounded-lg border p-6 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
           <div className="mb-4 flex items-center gap-3">
             <div className="bg-primary/10 text-primary rounded-md p-2">
-              <MdWeb className="h-5 w-5" />
+              <FaDatabase className="h-5 w-5" />
             </div>
             <h3 className="text-lg font-semibold">Databases</h3>
           </div>
@@ -143,6 +167,114 @@ const Skills = () => {
             <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
               <BiLogoPostgresql className="h-4 w-4" />
               PostgreSQL
+            </span>
+          </div>
+        </div>
+
+        <div className="bg-code-bg border-skill-border hover:border-primary/30 rounded-lg border p-6 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
+          <div className="mb-4 flex items-center gap-3">
+            <div className="bg-primary/10 text-primary rounded-md p-2">
+              <FaToolbox className="h-5 w-5" />
+            </div>
+            <h3 className="text-lg font-semibold">Tools & Platforms</h3>
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <FaGit className="h-4 w-4" />
+              Git
+            </span>
+
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <FaGithub className="h-4 w-4" />
+              GitHUb
+            </span>
+
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <SiPostman className="h-4 w-4" />
+              Postman
+            </span>
+
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <FaAws className="h-4 w-4" />
+              AWS
+            </span>
+
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <VscVscode className="h-4 w-4" />
+              VS Code
+            </span>
+
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <SiMacos className="h-4 w-4" />
+              MacOS
+            </span>
+          </div>
+        </div>
+
+        <div className="bg-code-bg border-skill-border hover:border-primary/30 rounded-lg border p-6 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
+          <div className="mb-4 flex items-center gap-3">
+            <div className="bg-primary/10 text-primary rounded-md p-2">
+              <VscSymbolColor className="h-5 w-5" />
+            </div>
+            <h3 className="text-lg font-semibold">Design & UI/UX</h3>
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <SiFigma className="h-4 w-4" />
+              Figma
+            </span>
+
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <SiAdobe className="h-4 w-4" />
+              Adobe Cloud
+            </span>
+
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <SiSketch className="h-4 w-4" />
+              Sketch
+            </span>
+          </div>
+        </div>
+
+        <div className="bg-code-bg border-skill-border hover:border-primary/30 rounded-lg border p-6 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
+          <div className="mb-4 flex items-center gap-3">
+            <div className="bg-primary/10 text-primary rounded-md p-2">
+              <BiCodeAlt className="h-5 w-5" />
+            </div>
+            <h3 className="text-lg font-semibold">Other Skills</h3>
+          </div>
+
+          <div className="flex flex-wrap gap-2">
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <FiLink className="h-4 w-4" />
+              REST APIs
+            </span>
+
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <GiProgression className="h-4 w-4" />
+              Agile / Scrum
+            </span>
+
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <FaBug className="h-4 w-4" />
+              Debugging
+            </span>
+
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <FaRocket className="h-4 w-4" />
+              Deployment
+            </span>
+
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <FaRegLightbulb className="h-4 w-4" />
+              Problem Solving
+            </span>
+
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <BiMessageRoundedDetail className="h-4 w-4" />
+              Communication
             </span>
           </div>
         </div>
