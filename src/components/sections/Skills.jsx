@@ -62,7 +62,7 @@ const Skills = () => {
         </p>
       </header>
 
-      <div className="text-heading">
+      <div className="text-heading grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         <div className="bg-code-bg border-skill-border hover:border-primary/30 rounded-lg border p-6 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
           <div className="mb-4 flex items-center gap-3">
             <div className="bg-primary/10 text-primary rounded-md p-2">
@@ -137,11 +137,6 @@ const Skills = () => {
               <SiBootstrap className="h-4 w-4" />
               Bootstrap
             </span>
-
-            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
-              <SiSass className="h-4 w-4" />
-              SASS
-            </span>
           </div>
         </div>
 
@@ -187,7 +182,7 @@ const Skills = () => {
 
             <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
               <FaGithub className="h-4 w-4" />
-              GitHUb
+              GitHub
             </span>
 
             <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
@@ -235,6 +230,11 @@ const Skills = () => {
               <SiSketch className="h-4 w-4" />
               Sketch
             </span>
+
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <SiSass className="h-4 w-4" />
+              SASS
+            </span>
           </div>
         </div>
 
@@ -270,11 +270,6 @@ const Skills = () => {
             <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
               <FaRegLightbulb className="h-4 w-4" />
               Problem Solving
-            </span>
-
-            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
-              <BiMessageRoundedDetail className="h-4 w-4" />
-              Communication
             </span>
           </div>
         </div>
