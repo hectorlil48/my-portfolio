@@ -1,5 +1,5 @@
 import { Code } from "lucide-react";
-import { SiJavascript } from "react-icons/si";
+import { SiJavascript, SiPython, SiTypescript } from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -27,10 +27,20 @@ const Skills = () => {
             <h3 className="text-lg font-semibold">Programming Languages</h3>
           </div>
 
-          <div>
-            <span>
-              <SiJavascript />
+          <div className="flex flex-wrap gap-2">
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <SiJavascript className="h-4 w-4" />
               JavaScript
+            </span>
+
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <SiPython className="h-4 w-4" />
+              Python
+            </span>
+
+            <span className="border-outline bg-main-btn inline-flex items-center gap-2 rounded-md border px-2 py-1">
+              <SiTypescript className="h-4 w-4" />
+              TypeScript
             </span>
           </div>
         </div>
