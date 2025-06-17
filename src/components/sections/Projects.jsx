@@ -30,6 +30,24 @@ const Projects = () => {
               featuring a dark/light theme, smooth animations, and a clean UI to
               showcase my skills and projects.
             </p>
+
+            <div className="flex flex-wrap gap-2">
+              <span className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs">
+                React.js
+              </span>
+
+              <span className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs">
+                Tailwindcss
+              </span>
+
+              <span className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs">
+                HTML & JSX
+              </span>
+
+              <span className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs">
+                JavaScript
+              </span>
+            </div>
           </div>
         </div>
       </div>
