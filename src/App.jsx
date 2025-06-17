@@ -8,7 +8,7 @@ import Contact from "./components/sections/Contact";
 
 const App = () => {
   return (
-    <div className="font-inter bg-background dark:bg-background font-inter min-h-screen transition-colors duration-300">
+    <div className="font-inter bg-background dark:bg-background min-h-screen transition-colors duration-300">
       <Navbar />
       <main className="pt-[90px] lg:pt-0">
         <Hero />
