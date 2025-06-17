@@ -18,7 +18,7 @@ const Projects = () => {
         <div className="bg-code-bg border-skill-border hover:border-primary/30 overflow-hidden rounded-lg border shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
           <div className="overflow-hidden">
             <img
-              src="public/Portfolio-Desktop-sc.png"
+              src="./Portfolio-Desktop-sc.png"
               alt="Screenshot of my portfolio project"
               className="w-full"
             />
