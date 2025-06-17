@@ -65,7 +65,7 @@ const Skills = () => {
       <div className="text-heading grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         <div className="bg-code-bg border-skill-border hover:border-primary/30 rounded-lg border p-6 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
           <div className="mb-4 flex items-center gap-3">
-            <div className="bg-primary/10 text-primary rounded-md p-2">
+            <div className="bg-primary/10 text-primary rounded-md p-2 transition-all duration-300 hover:scale-120 hover:rotate-6">
               <Code className="h-5 w-5" />
             </div>
             <h3 className="text-lg font-semibold">Programming Languages</h3>
@@ -101,7 +101,7 @@ const Skills = () => {
 
         <div className="bg-code-bg border-skill-border hover:border-primary/30 rounded-lg border p-6 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
           <div className="mb-4 flex items-center gap-3">
-            <div className="bg-primary/10 text-primary rounded-md p-2">
+            <div className="bg-primary/10 text-primary rounded-md p-2 transition-all duration-300 hover:scale-120 hover:rotate-6">
               <BiLayer className="h-5 w-5" />
             </div>
             <h3 className="text-lg font-semibold">Frameworks & Libraries</h3>
@@ -142,7 +142,7 @@ const Skills = () => {
 
         <div className="bg-code-bg border-skill-border hover:border-primary/30 rounded-lg border p-6 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
           <div className="mb-4 flex items-center gap-3">
-            <div className="bg-primary/10 text-primary rounded-md p-2">
+            <div className="bg-primary/10 text-primary rounded-md p-2 transition-all duration-300 hover:scale-120 hover:rotate-6">
               <FaDatabase className="h-5 w-5" />
             </div>
             <h3 className="text-lg font-semibold">Databases</h3>
@@ -168,7 +168,7 @@ const Skills = () => {
 
         <div className="bg-code-bg border-skill-border hover:border-primary/30 rounded-lg border p-6 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
           <div className="mb-4 flex items-center gap-3">
-            <div className="bg-primary/10 text-primary rounded-md p-2">
+            <div className="bg-primary/10 text-primary rounded-md p-2 transition-all duration-300 hover:scale-120 hover:rotate-6">
               <FaToolbox className="h-5 w-5" />
             </div>
             <h3 className="text-lg font-semibold">Tools & Platforms</h3>
@@ -209,7 +209,7 @@ const Skills = () => {
 
         <div className="bg-code-bg border-skill-border hover:border-primary/30 rounded-lg border p-6 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
           <div className="mb-4 flex items-center gap-3">
-            <div className="bg-primary/10 text-primary rounded-md p-2">
+            <div className="bg-primary/10 text-primary rounded-md p-2 transition-all duration-300 hover:scale-120 hover:rotate-6">
               <VscSymbolColor className="h-5 w-5" />
             </div>
             <h3 className="text-lg font-semibold">Design & UI/UX</h3>
@@ -240,7 +240,7 @@ const Skills = () => {
 
         <div className="bg-code-bg border-skill-border hover:border-primary/30 rounded-lg border p-6 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
           <div className="mb-4 flex items-center gap-3">
-            <div className="bg-primary/10 text-primary rounded-md p-2">
+            <div className="bg-primary/10 text-primary rounded-md p-2 transition-all duration-300 hover:scale-120 hover:rotate-6">
               <BiCodeAlt className="h-5 w-5" />
             </div>
             <h3 className="text-lg font-semibold">Other Skills</h3>
