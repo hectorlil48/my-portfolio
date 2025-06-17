@@ -1,7 +1,7 @@
 const SkillCard = ({ icon: Icon, title, skills }) => (
   <div className="bg-code-bg border-skill-border hover:border-primary/30 rounded-lg border p-6 shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
     <div className="mb-4 flex items-center gap-3">
-      <div className="bg-primary/10 text-primary rounded-md p-2">
+      <div className="bg-primary/10 text-primary rounded-md p-2 transition-all duration-300 hover:scale-120 hover:rotate-6">
         <Icon className="h-5 w-5" />
       </div>
       <h3 className="text-lg font-semibold">{title}</h3>
