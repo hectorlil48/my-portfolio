@@ -53,7 +53,7 @@ const Projects = () => {
 
             <div className="flex items-center gap-3">
               <a
-                href="https://your-live-link.com"
+                href="https://hectorlil48.github.io/my-portfolio/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-main-btn rounded-lg px-4 py-[10px] text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
@@ -61,7 +61,7 @@ const Projects = () => {
                 Live Demo
               </a>
               <a
-                href="https://github.com/yourusername/portfolio"
+                href="https://github.com/hectorlil48/my-portfolio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-outline text-heading hover:bg-primary hover:text-main-btn hover:border-primary rounded-lg border px-4 py-2 text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
@@ -82,7 +82,7 @@ const Projects = () => {
           </div>
           <div className="space-y-4 p-6">
             <h3 className="text-heading mb-[2px] text-xl font-bold">
-              My Portfolio
+              Frontend Quiz App
             </h3>
             <p className="text-foreground text-sm">
               A responsive portfolio built with React and Tailwind CSS,
@@ -96,10 +96,6 @@ const Projects = () => {
               </span>
 
               <span className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs">
-                Tailwindcss
-              </span>
-
-              <span className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs">
                 HTML & JSX
               </span>
 
@@ -110,7 +106,7 @@ const Projects = () => {
 
             <div className="flex items-center gap-3">
               <a
-                href="https://your-live-link.com"
+                href="https://hectorlil48.github.io/hectors-frontend-quiz-app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-main-btn rounded-lg px-4 py-[10px] text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
@@ -118,7 +114,7 @@ const Projects = () => {
                 Live Demo
               </a>
               <a
-                href="https://github.com/yourusername/portfolio"
+                href="https://github.com/hectorlil48/hectors-frontend-quiz-app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-outline text-heading hover:bg-primary hover:text-main-btn hover:border-primary rounded-lg border px-4 py-2 text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
