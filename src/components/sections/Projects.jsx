@@ -16,15 +16,16 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div className="bg-code-bg border-skill-border hover:border-primary/30 overflow-hidden rounded-lg border shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
-          <div className="overflow-hidden">
+          <div className="relative overflow-hidden">
             <img
               src="./portfolio-desktop-sc.png"
-              alt="Screenshot of my portfolio project"
-              className="w-full"
+              alt="Screenshot of Hector Ramirez's portfolio built with React"
+              className="w-full shadow-md brightness-96"
             />
+            <div className="bg-primary/10 absolute inset-0 opacity-0 transition-opacity hover:opacity-100"></div>
           </div>
-          <div className="space-y-4 p-6">
-            <h3 className="text-heading mb-[2px] text-xl font-bold">
+          <div className="space-y-5 p-6">
+            <h3 className="text-heading mb-[4px] text-xl font-bold">
               My Portfolio
             </h3>
             <p className="text-foreground text-sm">
@@ -47,7 +48,7 @@ const Projects = () => {
               </span>
 
               <span className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs">
-                JavaScript
+                Responsive Design
               </span>
             </div>
 
@@ -57,6 +58,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-main-btn rounded-lg px-4 py-[10px] text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
+                aria-label="Live demo of My Portfolio project"
               >
                 Live Demo
               </a>
@@ -65,6 +67,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-outline text-heading hover:bg-primary hover:text-main-btn hover:border-primary rounded-lg border px-4 py-2 text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
+                aria-label="View My Portfolio code on GitHub"
               >
                 GitHub
               </a>
@@ -73,21 +76,22 @@ const Projects = () => {
         </div>
 
         <div className="bg-code-bg border-skill-border hover:border-primary/30 overflow-hidden rounded-lg border shadow-sm transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
-          <div className="overflow-hidden">
+          <div className="relative overflow-hidden">
             <img
-              src="./portfolio-desktop-sc.png"
+              src="./frontend-quiz-app-sc.png"
               alt="Screenshot of my portfolio project"
-              className="w-full"
+              className="w-full shadow-md brightness-96"
             />
+            <div className="bg-primary/10 absolute inset-0 opacity-0 transition-opacity hover:opacity-100"></div>
           </div>
-          <div className="space-y-4 p-6">
-            <h3 className="text-heading mb-[2px] text-xl font-bold">
+          <div className="space-y-5 p-6">
+            <h3 className="text-heading mb-[4px] text-xl font-bold">
               Frontend Quiz App
             </h3>
             <p className="text-foreground text-sm">
-              A responsive portfolio built with React and Tailwind CSS,
-              featuring a dark/light theme, smooth animations, and a clean UI to
-              showcase my skills and projects.
+              A quiz app that lets users test their knowledge on various topics
+              with real-time feedback, dark mode, and keyboard navigation. Built
+              with React.
             </p>
 
             <div className="flex flex-wrap gap-2">
@@ -96,11 +100,15 @@ const Projects = () => {
               </span>
 
               <span className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs">
-                HTML & JSX
+                Responsive Design
               </span>
 
               <span className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs">
-                JavaScript
+                Dark Mode
+              </span>
+
+              <span className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs">
+                HTML & JSX
               </span>
             </div>
 
@@ -110,6 +118,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary text-main-btn rounded-lg px-4 py-[10px] text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
+                aria-label="Live demo of My Frontend Quiz App project"
               >
                 Live Demo
               </a>
@@ -118,6 +127,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-outline text-heading hover:bg-primary hover:text-main-btn hover:border-primary rounded-lg border px-4 py-2 text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
+                aria-label="View Frontend Quiz App code on GitHub"
               >
                 GitHub
               </a>
