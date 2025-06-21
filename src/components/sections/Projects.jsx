@@ -32,9 +32,10 @@ const Projects = () => {
                 My Portfolio
               </h3>
               <p className="text-foreground text-sm">
-                A responsive portfolio built with React and Tailwind CSS,
-                featuring a dark/light theme, smooth animations, and a clean UI
-                to showcase my skills and projects.
+                A fully responsive portfolio built with React and Tailwind CSS
+                to showcase my skills, experience, and projects. It features a
+                light/dark theme toggle, smooth animations, and a clean,
+                accessible UI optimized for both desktop and mobile.
               </p>
 
               <div className="flex flex-wrap gap-2">
@@ -42,7 +43,7 @@ const Projects = () => {
                   React.js
                 </span>
                 <span className="bg-primary/10 text-primary rounded-full px-3 py-1 text-xs">
-                  Tailwindcss
+                  Tailwind CSS
                 </span>
                 <span className="bg-primary/10 text-primary rounded-full px-3 py-1 text-xs">
                   HTML & JSX
@@ -59,7 +60,7 @@ const Projects = () => {
                 href="https://hectorlil48.github.io/my-portfolio/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-primary text-main-btn rounded-lg px-4 py-[10px] text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
+                className="bg-primary text-main-btn rounded-lg px-4 py-[9px] text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
               >
                 Live Demo
               </a>
@@ -92,9 +93,10 @@ const Projects = () => {
                 Frontend Quiz App
               </h3>
               <p className="text-foreground text-sm">
-                A quiz app that lets users test their knowledge on various
-                topics with real-time feedback, dark mode, and keyboard
-                navigation. Built with React.
+                An interactive quiz app built with React that allows users to
+                test their knowledge across various topics. Features include
+                real-time feedback, keyboard navigation, dark mode support, and
+                a responsive interface for seamless UX.
               </p>
 
               <div className="flex flex-wrap gap-2">
@@ -119,7 +121,7 @@ const Projects = () => {
                 href="https://hectorlil48.github.io/my-portfolio/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-primary text-main-btn rounded-lg px-4 py-[10px] text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
+                className="bg-primary text-main-btn rounded-lg px-4 py-[9px] text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
               >
                 Live Demo
               </a>
@@ -150,9 +152,10 @@ const Projects = () => {
                 Intro Component With Sign Up Form
               </h3>
               <p className="text-foreground text-sm">
-                A responsive sign-up form built with React and Tailwind CSS. It
-                features clean layout, validation, and intuitive error handling
-                using utility-first design.
+                A responsive sign-up form built with React and Tailwind CSS,
+                featuring client-side validation, intuitive error messages, and
+                clean layout design. Built with accessibility in mind using a
+                utility-first CSS approach for consistent styling.
               </p>
 
               <div className="flex flex-wrap gap-2">
@@ -161,7 +164,7 @@ const Projects = () => {
                 </span>
 
                 <span className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs">
-                  Tailwindcss
+                  Tailwind CSS
                 </span>
 
                 <span className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs">
@@ -179,7 +182,7 @@ const Projects = () => {
                 href="https://hectorlil48.github.io/intro-component-with-sign-up-form/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-primary text-main-btn rounded-lg px-4 py-[10px] text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
+                className="bg-primary text-main-btn rounded-lg px-4 py-[9px] text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
                 aria-label="Live demo of My Portfolio project"
               >
                 Live Demo
@@ -213,9 +216,10 @@ const Projects = () => {
                 Meet Landing Page
               </h3>
               <p className="text-foreground text-sm">
-                A responsive portfolio built with React and Tailwind CSS,
-                featuring a dark/light theme, smooth animations, and a clean UI
-                to showcase my skills and projects.
+                A responsive landing page designed with React and Tailwind CSS,
+                inspired by a team collaboration app concept. This project
+                focuses on clean layout structure, grid alignment, and modern
+                visual hierarchy for an engaging user experience.
               </p>
 
               <div className="flex flex-wrap gap-2">
@@ -224,7 +228,7 @@ const Projects = () => {
                 </span>
 
                 <span className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs">
-                  Javascript
+                  JavaScript
                 </span>
 
                 <span className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs">
@@ -242,7 +246,7 @@ const Projects = () => {
                 href="https://hectorlil48.github.io/meet-landing-page/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-primary text-main-btn rounded-lg px-4 py-[10px] text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
+                className="bg-primary text-main-btn rounded-lg px-4 py-[9px] text-sm font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md"
                 aria-label="Live demo of My Portfolio project"
               >
                 Live Demo
