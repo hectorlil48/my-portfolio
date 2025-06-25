@@ -1,7 +1,10 @@
-import { GraduationCap, Code } from "lucide-react";
+import { GraduationCap, Code, Briefcase } from "lucide-react";
+import { useState } from "react";
 
 const Experience = () => {
-  const experienceData = [
+  const [activeTab, setActiveTab] = useState("education");
+
+  const educationData = [
     {
       title: "Bachelor of Science in Computer Science",
       org: "Colorado Technical University",
@@ -26,40 +29,83 @@ const Experience = () => {
       description:
         "Completed a 2-year associate degree, building foundational skills in general education and critical thinking.",
     },
-    // {
-    //   title: "Forklift Operator",
-    //   org: "Best Buy",
-    //   date: "2018 – Present",
-    //   icon: <Briefcase size={18} />,
-    //   description:
-    //     "Work 8–10 hour shifts requiring focus, consistency, and physical endurance. Developed discipline while learning to code outside of work.",
-    // },
-    // {
-    //   title: "Freelance & Projects",
-    //   org: "Self-taught",
-    //   date: "2023 – Present",
-    //   icon: <Code size={18} />,
-    //   description:
-    //     "Built frontend and full-stack apps with React, Node.js, and Python. Focused on accessibility, responsive design, and real-world problem solving.",
-    // },
   ];
+
+  const experienceData = [
+    {
+      title: "General Warehouse Worker",
+      org: "Best Buy",
+      date: "2016 – Present",
+      icon: <Briefcase size={18} />,
+      description:
+        "Work 8–10 hour shifts requiring focus, consistency, and physical endurance. Developed discipline while learning to code outside of work.",
+    },
+    {
+      title: "Freelance & Projects",
+      org: "Self-taught",
+      date: "2020 – Present",
+      icon: <Code size={18} />,
+      description:
+        "Built frontend and full-stack apps with React, Node.js, and Python. Focused on accessibility, responsive design, and real-world problem solving.",
+    },
+    {
+      title: "Web Developer Intern",
+      org: "RW Digital Market Media (Remote)",
+      date: "Jul 2021 – Dec 2021",
+      icon: <Code size={18} />,
+      description:
+        "Built responsive websites using HTML, CSS, and Bootstrap. Contributed to improving UX and team collaboration on client-facing projects.",
+    },
+    {
+      title: "Web Developer Intern",
+      org: "ooLango E-Learning (Remote)",
+      date: "Aug 2019 – Dec 2019",
+      icon: <Code size={18} />,
+      description:
+        "Developed static pages using HTML and CSS. Worked closely with other interns in an agile team environment to meet project goals.",
+    },
+  ];
+
+  const data = activeTab === "education" ? educationData : experienceData;
 
   return (
     <section id="experience" className="mx-auto max-w-6xl px-6 py-24">
-      <header className="mb-12 lg:mb-14">
-        <div>
-          <h2 className="text-heading mb-[6px] text-4xl font-bold transition-colors duration-300">
-            Experience
-          </h2>
-          <div className="bg-primary h-[5px] w-10 rounded"></div>
-        </div>
+      <header className="mb-12">
+        <h2 className="text-heading mb-[6px] text-4xl font-bold transition-colors duration-300">
+          Experience
+        </h2>
+        <div className="bg-primary h-[5px] w-10 rounded"></div>
       </header>
 
-      <div className="border-primary/30 relative border-l-2">
-        {experienceData.map((item, index) => (
-          <div key={index} className="relative mb-12">
+      {/* Tabs */}
+      <div className="mb-10 flex gap-4">
+        <button
+          onClick={() => setActiveTab("education")}
+          className={`rounded-lg px-4 py-[10px] text-base font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md ${
+            activeTab === "education"
+              ? "bg-primary text-main-btn"
+              : "border-outline text-heading hover:bg-primary hover:text-main-btn hover:border-primary border-2"
+          }`}
+        >
+          Education
+        </button>
+        <button
+          onClick={() => setActiveTab("experience")}
+          className={`rounded-lg px-4 py-[10px] text-base font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md ${
+            activeTab === "experience"
+              ? "bg-primary text-main-btn"
+              : "border-outline text-heading hover:bg-primary hover:text-main-btn hover:border-primary border-2"
+          }`}
+        >
+          Experience
+        </button>
+      </div>
+
+      <div className="border-primary/30 relative ml-4 border-l-2">
+        {data.map((item, index) => (
+          <div key={index} className="relative mb-8">
             {/* Timeline Icon */}
-            <div className="bg-primary text-main-btn absolute top-[-2px] -left-[22px] z-10 flex h-10 w-10 items-center justify-center rounded-full shadow-md">
+            <div className="bg-primary text-main-btn absolute top-0 -left-[22px] z-10 flex h-10 w-10 items-center justify-center rounded-full shadow-md">
               {item.icon}
             </div>
 
@@ -68,8 +114,8 @@ const Experience = () => {
               <h3 className="text-heading text-lg font-semibold">
                 {item.title}
               </h3>
-              <p className="text-muted-foreground text-sm">{item.org}</p>
-              <p className="text-muted-foreground text-xs">{item.date}</p>
+              <p className="text-foreground text-sm">{item.org}</p>
+              <p className="text-foreground text-xs">{item.date}</p>
               <p className="text-foreground text-sm">{item.description}</p>
             </div>
           </div>
