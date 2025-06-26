@@ -3,7 +3,7 @@ import Hero from "./components/sections/Hero/Hero";
 import About from "./components/sections/About";
 import Skills from "./components/sections/Skill/Skills";
 import Projects from "./components/sections/Projects";
-import Journey from "./components/sections/Journey";
+import Journey from "./components/sections/Journey/Journey";
 import Contact from "./components/sections/Contact";
 
 const App = () => {
