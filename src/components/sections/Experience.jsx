@@ -2,7 +2,7 @@ import { GraduationCap, Code, Briefcase } from "lucide-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const Experience = () => {
+const Journey = () => {
   const [activeTab, setActiveTab] = useState("education");
 
   const educationData = [
@@ -70,7 +70,7 @@ const Experience = () => {
   const data = activeTab === "education" ? educationData : workData;
 
   return (
-    <section id="experience" className="mx-auto max-w-6xl px-6 py-24">
+    <section id="journey" className="mx-auto max-w-6xl px-6 py-24">
       <header className="mb-12">
         <h2 className="text-heading mb-[6px] text-4xl font-bold transition-colors duration-300">
           My Journey
@@ -133,4 +133,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Journey;
