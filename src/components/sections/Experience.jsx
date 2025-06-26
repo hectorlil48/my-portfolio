@@ -1,5 +1,6 @@
 import { GraduationCap, Code, Briefcase } from "lucide-react";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   const [activeTab, setActiveTab] = useState("education");
@@ -72,7 +73,7 @@ const Experience = () => {
     <section id="experience" className="mx-auto max-w-6xl px-6 py-24">
       <header className="mb-12">
         <h2 className="text-heading mb-[6px] text-4xl font-bold transition-colors duration-300">
-          Experience
+          My Journey
         </h2>
         <div className="bg-primary h-[5px] w-10 rounded"></div>
       </header>
@@ -103,7 +104,14 @@ const Experience = () => {
 
       <div className="border-primary/30 relative ml-4 border-l-2">
         {data.map((item, index) => (
-          <div key={index} className="relative mb-8">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="relative mb-8"
+          >
             {/* Timeline Icon */}
             <div className="bg-primary text-main-btn absolute top-0 -left-[22px] z-10 flex h-10 w-10 items-center justify-center rounded-full shadow-md">
               {item.icon}
@@ -114,11 +122,11 @@ const Experience = () => {
               <h3 className="text-heading text-lg font-semibold">
                 {item.title}
               </h3>
-              <p className="text-muted text-medium">{item.org}</p>
-              <p className="text-soft itali text-sm">{item.date}</p>
-              <p className="text-foreground text-medium">{item.description}</p>
+              <p className="text-muted text-sm">{item.org}</p>
+              <p className="text-soft text-xs italic">{item.date}</p>
+              <p className="text-foreground text-sm">{item.description}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
