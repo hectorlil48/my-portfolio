@@ -79,9 +79,10 @@ const Journey = () => {
       </header>
 
       {/* Tabs */}
-      <div className="mb-10 flex gap-4">
+      <div className="mb-10 flex flex-wrap gap-4">
         <button
           onClick={() => setActiveTab("education")}
+          aria-selected={activeTab === "education"}
           className={`rounded-lg px-4 py-[10px] text-base font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md ${
             activeTab === "education"
               ? "bg-primary text-main-btn"
@@ -92,6 +93,7 @@ const Journey = () => {
         </button>
         <button
           onClick={() => setActiveTab("work")}
+          aria-selected={activeTab === "work"}
           className={`rounded-lg px-4 py-[10px] text-base font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md ${
             activeTab === "work"
               ? "bg-primary text-main-btn"
@@ -102,7 +104,15 @@ const Journey = () => {
         </button>
       </div>
 
-      <div className="border-primary/30 relative ml-4 border-l-2">
+      <div className="relative ml-4">
+        {/* Animated vertical line */}
+        <motion.div
+          className="bg-primary/30 absolute top-0 left-[-2px] h-full w-1"
+          initial={{ height: 0 }}
+          whileInView={{ height: "100%" }}
+          transition={{ duration: 1 }}
+        />
+
         {data.map((item, index) => (
           <motion.div
             key={index}
@@ -110,7 +120,8 @@ const Journey = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.4 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="relative mb-8"
+            whileHover={{ scale: 1.02 }}
+            className="relative mb-8 cursor-pointer"
           >
             {/* Timeline Icon */}
             <div className="bg-primary text-main-btn absolute top-0 -left-[22px] z-10 flex h-10 w-10 items-center justify-center rounded-full shadow-md">

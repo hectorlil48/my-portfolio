@@ -3,7 +3,7 @@ import Hero from "./components/sections/Hero/Hero";
 import About from "./components/sections/About";
 import Skills from "./components/sections/Skill/Skills";
 import Projects from "./components/sections/Projects";
-import Experience from "./components/sections/Experience";
+import Journey from "./components/sections/Journey";
 import Contact from "./components/sections/Contact";
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
         <About />
         <Skills />
         <Projects />
-        <Experience />
+        <Journey />
         <Contact />
       </main>
     </div>
