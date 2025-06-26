@@ -31,15 +31,7 @@ const Experience = () => {
     },
   ];
 
-  const experienceData = [
-    {
-      title: "General Warehouse Worker",
-      org: "Best Buy",
-      date: "2016 – Present",
-      icon: <Briefcase size={18} />,
-      description:
-        "Work 8–10 hour shifts requiring focus, consistency, and physical endurance. Developed discipline while learning to code outside of work.",
-    },
+  const workData = [
     {
       title: "Freelance & Projects",
       org: "Self-taught",
@@ -64,9 +56,17 @@ const Experience = () => {
       description:
         "Developed static pages using HTML and CSS. Worked closely with other interns in an agile team environment to meet project goals.",
     },
+    {
+      title: "General Warehouse Worker",
+      org: "Best Buy",
+      date: "2016 – Present",
+      icon: <Briefcase size={18} />,
+      description:
+        "Work 8–10 hour shifts requiring focus, consistency, and physical endurance. Developed discipline while learning to code outside of work.",
+    },
   ];
 
-  const data = activeTab === "education" ? educationData : experienceData;
+  const data = activeTab === "education" ? educationData : workData;
 
   return (
     <section id="experience" className="mx-auto max-w-6xl px-6 py-24">
@@ -90,14 +90,14 @@ const Experience = () => {
           Education
         </button>
         <button
-          onClick={() => setActiveTab("experience")}
+          onClick={() => setActiveTab("work")}
           className={`rounded-lg px-4 py-[10px] text-base font-medium transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-md ${
-            activeTab === "experience"
+            activeTab === "work"
               ? "bg-primary text-main-btn"
               : "border-outline text-heading hover:bg-primary hover:text-main-btn hover:border-primary border-2"
           }`}
         >
-          Experience
+          Work
         </button>
       </div>
 
@@ -114,9 +114,9 @@ const Experience = () => {
               <h3 className="text-heading text-lg font-semibold">
                 {item.title}
               </h3>
-              <p className="text-foreground text-sm">{item.org}</p>
-              <p className="text-foreground text-xs">{item.date}</p>
-              <p className="text-foreground text-sm">{item.description}</p>
+              <p className="text-muted text-medium">{item.org}</p>
+              <p className="text-soft itali text-sm">{item.date}</p>
+              <p className="text-foreground text-medium">{item.description}</p>
             </div>
           </div>
         ))}
