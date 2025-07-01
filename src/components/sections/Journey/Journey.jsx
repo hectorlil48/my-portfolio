@@ -9,11 +9,17 @@ const Journey = () => {
 
   return (
     <section id="journey" className="mx-auto max-w-6xl px-6 py-24">
-      <header className="mb-12">
-        <h2 className="text-heading mb-[6px] text-4xl font-bold transition-colors duration-300">
-          My Journey
-        </h2>
-        <div className="bg-primary h-[5px] w-10 rounded"></div>
+      <header className="mb-8">
+        <div className="mb-6">
+          <h2 className="text-heading mb-[6px] text-4xl font-bold transition-colors duration-300">
+            My Journey
+          </h2>
+          <div className="bg-primary h-[5px] w-10 rounded"></div>
+        </div>
+
+        <p className="text-foreground max-w-2xl">
+          Got a project or just want to connect? Feel free to reach out!
+        </p>
       </header>
 
       {/* Tabs */}
