@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Github } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -62,14 +62,35 @@ const Contact = () => {
             <h3 className="text-heading mb-3 text-lg font-semibold">
               Connect with me
             </h3>
-            <div>
+            <div className="flex space-x-4">
               <a
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
+                className="text-muted bg-connect-bg hover:bg-primary hover:text-connect-bg rounded-full p-3"
               >
-                <Github />
+                <Github className="h-6 w-6" />
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="text-muted bg-connect-bg hover:bg-primary hover:text-connect-bg rounded-full p-3"
+              >
+                <Linkedin className="h-6 w-6" />
+              </a>
+
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="text-muted bg-connect-bg hover:bg-primary hover:text-connect-bg rounded-full p-3"
+              >
+                <Mail className="h-6 w-6" />
               </a>
             </div>
           </div>

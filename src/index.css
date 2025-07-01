@@ -14,7 +14,7 @@
   --color-main-btn: hsl(260, 50%, 98%);
   --color-outline: hsl(260, 32%, 91%);
   --color-background: hsl(240, 67%, 98%);
-
+  --color-connect-bg: hsl(260, 40%, 96%);
   --font-inter: "Inter", sans-serif;
 
   --animate-fade-in: fade-in 0.5s ease-out forwards;
@@ -41,4 +41,5 @@
   --color-foreground: hsl(215, 20%, 65%);
   --color-muted: hsl(215, 20%, 55%);
   --color-soft: hsl(215, 10%, 60%);
+  --color-connect-bg: hsl(260, 40%, 84%);
 }
