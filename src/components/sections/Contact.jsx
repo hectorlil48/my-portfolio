@@ -88,7 +88,7 @@ const Contact = () => {
         <div className="md:col-span-2">
           <form className="bg-code-bg border-skill-border space-y-6 rounded-lg border p-6 shadow-sm">
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-              <div className="space-y-2">
+              <div>
                 <label
                   htmlFor="name"
                   className="text-foreground text-sm font-semibold"
@@ -99,7 +99,7 @@ const Contact = () => {
                   type="text"
                   id="name"
                   name="name"
-                  autoComplete="true"
+                  autoComplete="name"
                   placeholder="John Doe"
                   required
                   className="border-outline text-foreground bg-input placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
@@ -117,7 +117,7 @@ const Contact = () => {
                   type="text"
                   id="email"
                   name="email"
-                  autoComplete="true"
+                  autoComplete="email"
                   placeholder="john@example.com"
                   required
                   className="border-outline text-foreground bg-input placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
