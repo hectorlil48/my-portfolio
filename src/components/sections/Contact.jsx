@@ -62,35 +62,25 @@ const Contact = () => {
             <h3 className="text-heading mb-3 text-lg font-semibold">
               Connect with me
             </h3>
-            <div className="flex space-x-4">
+            <div className="text-foreground flex space-x-6">
               <a
-                href=""
+                href="https://github.com/hectorlil48"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="text-muted bg-connect-bg hover:bg-primary hover:text-connect-bg rounded-full p-3"
               >
-                <Github className="h-6 w-6" />
+                <Github className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6 lg:h-7 lg:w-7" />
               </a>
-
               <a
-                href=""
+                href="https://www.linkedin.com/in/hector-ramirez-6a6509170/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="GitHub"
-                className="text-muted bg-connect-bg hover:bg-primary hover:text-connect-bg rounded-full p-3"
+                aria-label="LinkedIn Profile"
               >
-                <Linkedin className="h-6 w-6" />
+                <Linkedin className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6 lg:h-7 lg:w-7" />
               </a>
-
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-                className="text-muted bg-connect-bg hover:bg-primary hover:text-connect-bg rounded-full p-3"
-              >
-                <Mail className="h-6 w-6" />
+              <a href="mailto:hramir94@gmail.com" aria-label="Email">
+                <Mail className="hover:text-primary h-6 w-6 transition-all duration-300 motion-safe:hover:scale-120 motion-safe:hover:rotate-6 lg:h-7 lg:w-7" />
               </a>
             </div>
           </div>
