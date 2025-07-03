@@ -4,16 +4,12 @@ const Contact = () => {
   return (
     <section id="contact" className="mx-auto max-w-6xl px-6 py-20">
       <header className="mb-12 lg:mb-14">
-        <div className="mb-6">
+        <div>
           <h2 className="text-heading mb-[6px] text-4xl font-bold transition-colors duration-300">
             Get In Touch
           </h2>
           <div className="bg-primary h-[5px] w-10 rounded"></div>
         </div>
-
-        <p className="text-foreground max-w-2xl">
-          Got a project or just want to connect? Feel free to reach out!
-        </p>
       </header>
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -23,7 +19,8 @@ const Contact = () => {
               Contact Information
             </h3>
             <p className="text-foreground">
-              Fill out the form and I will get back to you as soon as possible.
+              Have a question or want to work together? Send me a message and
+              I’ll get back to you as soon as I can.
             </p>
           </div>
 
@@ -85,8 +82,20 @@ const Contact = () => {
           </div>
         </div>
         <div className="md:col-span-2">
-          <form className="bg-code-bg border-skill-border space-y-6 rounded-lg border p-6 shadow-sm">
+          <form
+            className="bg-code-bg border-skill-border space-y-6 rounded-lg border p-6 shadow-sm"
+            method="POST"
+            action="https://api.web3forms.com/submit"
+          >
+            {/* Hidden input for Web3Forms API key */}
+            <input
+              type="hidden"
+              name="access_key"
+              value="YOUR_ACCESS_KEY_HERE"
+            />
+
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              {/* Name */}
               <div>
                 <label
                   htmlFor="name"
@@ -98,56 +107,56 @@ const Contact = () => {
                   type="text"
                   id="name"
                   name="name"
-                  autoComplete="name"
-                  placeholder="John Doe"
                   required
-                  className="border-outline text-foreground bg-input placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
+                  placeholder="John Doe"
+                  className="bg-input border-outline text-foreground placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
                 />
               </div>
 
+              {/* Email */}
               <div>
                 <label
-                  htmlFor="name"
+                  htmlFor="email"
                   className="text-foreground text-sm font-semibold"
                 >
                   Your Email
                 </label>
                 <input
-                  type="text"
+                  type="email"
                   id="email"
                   name="email"
-                  autoComplete="email"
-                  placeholder="john@example.com"
                   required
-                  className="border-outline text-foreground bg-input placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
+                  placeholder="john@example.com"
+                  className="bg-input border-outline text-foreground placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
                 />
               </div>
             </div>
 
+            {/* Message */}
             <div>
               <label
                 htmlFor="message"
                 className="text-foreground text-sm font-semibold"
               >
-                Message
+                Your Message
               </label>
               <textarea
-                name="message"
                 id="message"
-                rows={6}
-                placeholder="Write your message here..."
+                name="message"
+                rows="6"
                 required
-                className="border-outline bg-input text-foreground placeholder-muted focus:ring-primary mt-2 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
+                placeholder="Write your message here..."
+                className="bg-input border-outline text-foreground placeholder-muted focus:ring-primary mt-2 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
               ></textarea>
             </div>
-            <div>
-              <button
-                type="submit"
-                className="bg-primary text-main-btn hover:bg-primary/90 focus:ring-primary w-full rounded-md px-6 py-3 text-base font-semibold shadow transition-all duration-300 hover:scale-[1.02] focus:ring-2 focus:ring-offset-2 focus:outline-none"
-              >
-                Send Message
-              </button>
-            </div>
+
+            {/* Submit Button */}
+            <button
+              type="submit"
+              className="bg-primary text-main-btn hover:bg-primary/90 focus:ring-primary w-full rounded-md px-6 py-3 text-center text-sm font-semibold transition-all duration-300 focus:ring-2 focus:outline-none"
+            >
+              Send Message
+            </button>
           </form>
         </div>
       </div>
