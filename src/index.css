@@ -12,6 +12,7 @@
   --color-skill-border: hsl(260, 32%, 91%);
   --color-code-bg: hsl(0, 0%, 100%);
   --color-main-btn: hsl(260, 50%, 98%);
+  --color-input: hsl(260, 50%, 98%);
   --color-outline: hsl(260, 32%, 91%);
   --color-background: hsl(240, 67%, 98%);
   --color-connect-bg: hsl(260, 40%, 96%);
@@ -37,6 +38,7 @@
   --color-code-bg: hsl(222, 44%, 8%);
   --color-skill-border: hsl(217, 33%, 18%);
   --color-main-btn: hsl(222, 46%, 11%);
+  --color-input: hsl(222, 44%, 8%);
   --color-outline: hsl(217, 33%, 18%);
   --color-foreground: hsl(215, 20%, 65%);
   --color-muted: hsl(215, 20%, 55%);

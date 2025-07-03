@@ -102,7 +102,7 @@ const Contact = () => {
                   autoComplete="true"
                   placeholder="John Doe"
                   required
-                  className="border-outline text-foreground placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
+                  className="border-outline text-foreground bg-input placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
                 />
               </div>
 
@@ -120,7 +120,7 @@ const Contact = () => {
                   autoComplete="true"
                   placeholder="john@example.com"
                   required
-                  className="border-outline text-foreground placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
+                  className="border-outline text-foreground bg-input placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
                 />
               </div>
               <div></div>
