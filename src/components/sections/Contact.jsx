@@ -17,8 +17,8 @@ const Contact = () => {
         </p>
       </header>
 
-      <div>
-        <div>
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="space-y-8 md:col-span-1">
           <div className="mb-8">
             <h3 className="text-heading mb-3 text-lg font-semibold">
               Contact Information
@@ -44,7 +44,7 @@ const Contact = () => {
               <div>
                 <h4 className="text-foreground font-medium">Phone</h4>
                 <p className="text-muted text-sm">
-                  <a href="tel:7792790100">(779)-279-0100</a>
+                  <a href="tel:7792790100">(779) 279-0100</a>
                 </p>
               </div>
             </div>
@@ -85,7 +85,48 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div></div>
+        <div className="md:col-span-2">
+          <form className="bg-code-bg border-skill-border space-y-6 rounded-lg border p-6 shadow-sm">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div className="space-y-2">
+                <label
+                  htmlFor="name"
+                  className="text-foreground text-sm font-semibold"
+                >
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autoComplete="true"
+                  placeholder="John Doe"
+                  required
+                  className="border-outline text-foreground placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="name"
+                  className="text-foreground text-sm font-semibold"
+                >
+                  Your Email
+                </label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  autoComplete="true"
+                  placeholder="john@example.com"
+                  required
+                  className="border-outline text-foreground placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
+                />
+              </div>
+              <div></div>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   );
