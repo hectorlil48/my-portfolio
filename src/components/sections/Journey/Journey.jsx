@@ -18,7 +18,8 @@ const Journey = () => {
         </div>
 
         <p className="text-foreground max-w-2xl">
-          Got a project or just want to connect? Feel free to reach out!
+          A timeline of my education and hands-on work experience in web
+          development.
         </p>
       </header>
 

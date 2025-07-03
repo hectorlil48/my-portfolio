@@ -12,8 +12,7 @@ const Contact = () => {
         </div>
 
         <p className="text-foreground max-w-2xl">
-          A timeline of my education and hands-on work experience in web
-          development.
+          Got a project or just want to connect? Feel free to reach out!
         </p>
       </header>
 
@@ -123,7 +122,31 @@ const Contact = () => {
                   className="border-outline text-foreground bg-input placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
                 />
               </div>
-              <div></div>
+            </div>
+
+            <div>
+              <label
+                htmlFor="message"
+                className="text-foreground text-sm font-semibold"
+              >
+                Message
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                rows={6}
+                placeholder="Write your message here..."
+                required
+                className="border-outline bg-input text-foreground placeholder-muted focus:ring-primary mt-2 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
+              ></textarea>
+            </div>
+            <div>
+              <button
+                type="submit"
+                className="bg-primary text-main-btn hover:bg-primary/90 focus:ring-primary w-full rounded-md px-6 py-3 text-base font-semibold shadow transition-all duration-300 hover:scale-[1.02] focus:ring-2 focus:ring-offset-2 focus:outline-none"
+              >
+                Send Message
+              </button>
             </div>
           </form>
         </div>
