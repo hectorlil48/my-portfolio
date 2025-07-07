@@ -1,6 +1,42 @@
+import { useState } from "react";
 import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const validate = () => {
+    const newErrors = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required.";
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required.";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Email is invalid.";
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required.";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = (e) => {
+    if (!validate()) {
+      e.preventDefault();
+    }
+  };
+
   return (
     <section id="contact" className="mx-auto max-w-6xl px-6 py-20">
       <header className="mb-12 lg:mb-14">
@@ -40,7 +76,7 @@ const Contact = () => {
               <div>
                 <h4 className="text-foreground font-medium">Phone</h4>
                 <p className="text-muted text-sm">
-                  <a href="tel:7792790100">(779) 279-0100</a>
+                  <a href="tel:+17792790100">(779) 279-0100</a>
                 </p>
               </div>
             </div>
@@ -64,6 +100,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
+                className="focus-visible:ring-primary rounded focus:outline-none focus-visible:ring-2"
               >
                 <Github className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6 lg:h-7 lg:w-7" />
               </a>
@@ -72,20 +109,27 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn Profile"
+                className="focus-visible:ring-primary rounded focus:outline-none focus-visible:ring-2"
               >
                 <Linkedin className="hover:text-primary h-6 w-6 transition-all duration-300 hover:scale-120 hover:rotate-6 lg:h-7 lg:w-7" />
               </a>
-              <a href="mailto:hramir94@gmail.com" aria-label="Email">
+              <a
+                href="mailto:hramir94@gmail.com"
+                aria-label="Email"
+                className="focus-visible:ring-primary rounded focus:outline-none focus-visible:ring-2"
+              >
                 <Mail className="hover:text-primary h-6 w-6 transition-all duration-300 motion-safe:hover:scale-120 motion-safe:hover:rotate-6 lg:h-7 lg:w-7" />
               </a>
             </div>
           </div>
         </div>
+
         <div className="md:col-span-2">
           <form
             className="bg-code-bg border-skill-border space-y-6 rounded-lg border p-6 shadow-sm"
             method="POST"
             action="https://api.web3forms.com/submit"
+            onSubmit={handleSubmit}
           >
             {/* Hidden input for Web3Forms API key */}
             <input
@@ -108,9 +152,16 @@ const Contact = () => {
                   id="name"
                   name="name"
                   required
+                  value={formData.name}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
                   placeholder="John Doe"
                   className="bg-input border-outline text-foreground placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
                 />
+                {errors.name && (
+                  <p className="mt-1 text-sm text-red-500">{errors.name}</p>
+                )}
               </div>
 
               {/* Email */}
@@ -126,9 +177,16 @@ const Contact = () => {
                   id="email"
                   name="email"
                   required
+                  value={formData.email}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
                   placeholder="john@example.com"
                   className="bg-input border-outline text-foreground placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
                 />
+                {errors.email && (
+                  <p className="mt-1 text-sm text-red-500">{errors.email}</p>
+                )}
               </div>
             </div>
 
@@ -145,9 +203,16 @@ const Contact = () => {
                 name="message"
                 rows="6"
                 required
+                value={formData.message}
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
                 placeholder="Write your message here..."
                 className="bg-input border-outline text-foreground placeholder-muted focus:ring-primary mt-2 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
               ></textarea>
+              {errors.message && (
+                <p className="mt-1 text-sm text-red-500">{errors.message}</p>
+              )}
             </div>
 
             {/* Submit Button */}
