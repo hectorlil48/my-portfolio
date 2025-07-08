@@ -1,0 +1,19 @@
+import { ArrowUp } from "lucide-react";
+
+const BackToTopButton = () => {
+  const handleScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  return (
+    <button
+      onClick={handleScrollTop}
+      className="bg-primary hover:bg-primary/80 focus-visible:ring-primary fixed right-6 bottom-6 z-50 rounded-full p-3 text-white shadow-lg transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+      aria-label="Back to top"
+    >
+      <ArrowUp className="h-5 w-5" />
+    </button>
+  );
+};
+
+export default BackToTopButton;
