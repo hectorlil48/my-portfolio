@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="mx-auto flex min-h-screen max-w-6xl flex-col items-center gap-12 px-6 py-20 lg:flex-row lg:gap-10"
+      className="mx-auto flex min-h-screen max-w-6xl flex-col items-center gap-12 px-6 lg:flex-row lg:gap-10 lg:px-8"
     >
       <motion.div
         initial={{ opacity: 0, x: -50 }}

@@ -17,14 +17,11 @@ const BackToTopButton = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  if (!visible) return null;
-
   return (
     <button
       onClick={handleScrollTop}
-      className="bg-primary hover:bg-primary/80 focus-visible:ring-primary fixed right-6 bottom-6 z-50 rounded-full p-3 text-white shadow-lg transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
       aria-label="Back to top"
-      title="Back to top"
+      className={`bg-primary focus-visible:ring-primary fixed right-6 bottom-6 z-50 rounded-full p-3 text-white shadow-lg transition-opacity duration-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${visible ? "opacity-100" : "pointer-events-none opacity-0"}`}
     >
       <ArrowUp className="h-5 w-5" />
     </button>

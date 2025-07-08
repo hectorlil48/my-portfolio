@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import ContactHeader from "./ContactHeader";
 import ContactInfo from "./ContactInfo";
 import ContactLinks from "./ContactLinks";
@@ -9,14 +10,26 @@ const Contact = () => {
       <ContactHeader />
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-        <div className="space-y-8 md:col-span-1">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="space-y-8 md:col-span-1"
+        >
           <ContactInfo />
           <ContactLinks />
-        </div>
+        </motion.div>
 
-        <div className="md:col-span-2">
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="md:col-span-2"
+        >
           <ContactForm />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
