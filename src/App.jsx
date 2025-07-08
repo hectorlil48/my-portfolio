@@ -4,7 +4,7 @@ import About from "./components/sections/About";
 import Skills from "./components/sections/Skill/Skills";
 import Projects from "./components/sections/Projects";
 import Journey from "./components/sections/Journey/Journey";
-import Contact from "./components/sections/Skill/Contact/Contact";
+import Contact from "./components/sections/Contact/Contact";
 import BackToTopButton from "./components/common/BackToTopButton";
 
 const App = () => {

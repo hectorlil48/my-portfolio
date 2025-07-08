@@ -60,6 +60,7 @@ const ContactForm = () => {
             id="name"
             name="name"
             required
+            autoComplete="name"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             placeholder="John Doe"
@@ -83,6 +84,7 @@ const ContactForm = () => {
             id="email"
             name="email"
             required
+            autoComplete="email"
             value={formData.email}
             onChange={(e) =>
               setFormData({ ...formData, email: e.target.value })
