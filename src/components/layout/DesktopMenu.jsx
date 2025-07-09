@@ -3,7 +3,7 @@ import MenuLinks from "../common/MenuLinks";
 import ToggleLightDark from "./ToggleLightDark";
 
 const DesktopMenu = ({ activeId }) => (
-  <ul className="text-heading hidden items-center space-x-8 text-base font-medium md:flex">
+  <ul className="text-heading hidden items-center space-x-8 text-base font-medium 2xl:flex">
     <MenuLinks activeId={activeId} />
 
     <li>

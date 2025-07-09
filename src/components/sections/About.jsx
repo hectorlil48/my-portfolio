@@ -14,7 +14,7 @@ const About = () => {
         </div>
       </header>
 
-      <div className="flex flex-col items-center justify-center space-y-6 lg:flex-row lg:justify-start lg:space-y-0 lg:space-x-8">
+      <div className="flex flex-col items-center justify-center space-y-6 overflow-hidden lg:flex-row lg:justify-start lg:space-y-0 lg:space-x-8">
         {/* Image */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}

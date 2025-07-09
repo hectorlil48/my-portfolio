@@ -18,6 +18,8 @@
   --color-connect-bg: hsl(260, 40%, 96%);
   --font-inter: "Inter", sans-serif;
 
+  --breakpoint-2xl: 51.875rem;
+
   --animate-fade-in: fade-in 0.5s ease-out forwards;
 
   @keyframes fade-in {

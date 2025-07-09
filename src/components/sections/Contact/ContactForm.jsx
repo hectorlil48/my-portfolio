@@ -67,7 +67,9 @@ const ContactForm = () => {
             className="bg-input border-outline text-foreground placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
           />
           {errors.name && (
-            <p className="mt-1 text-sm text-red-500">{errors.name}</p>
+            <p className="mt-1 min-h-[1.25rem] text-sm text-red-500">
+              {errors.name}
+            </p>
           )}
         </div>
 
@@ -93,7 +95,9 @@ const ContactForm = () => {
             className="bg-input border-outline text-foreground placeholder-muted focus:ring-primary mt-2 h-10 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
           />
           {errors.email && (
-            <p className="mt-1 text-sm text-red-500">{errors.email}</p>
+            <p className="mt-1 min-h-[1.25rem] text-sm text-red-500">
+              {errors.email}
+            </p>
           )}
         </div>
       </div>
@@ -116,10 +120,12 @@ const ContactForm = () => {
             setFormData({ ...formData, message: e.target.value })
           }
           placeholder="Write your message here..."
-          className="bg-input border-outline text-foreground placeholder-muted focus:ring-primary mt-2 w-full rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
+          className="bg-input border-outline text-foreground placeholder-muted focus:ring-primary mt-2 w-full resize-none rounded-md border px-4 py-2 text-base outline-none focus:ring-2"
         ></textarea>
         {errors.message && (
-          <p className="mt-1 text-sm text-red-500">{errors.message}</p>
+          <p className="mt-1 min-h-[1.25rem] text-sm text-red-500">
+            {errors.message}
+          </p>
         )}
       </div>
 
