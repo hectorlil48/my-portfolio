@@ -8,6 +8,17 @@ const MobileMenu = ({ activeId, onClose }) => (
   >
     <ul className="space-y-5 text-base font-medium">
       <MenuLinks activeId={activeId} onLinkClick={onClose} isMobile />
+
+      <li>
+        <a
+          href="public/Resume 2.0.pdf"
+          download
+          aria-label="Download resume"
+          className="bg-primary text-main-btn ml-[-6px] rounded-lg px-3 py-[8px] text-sm font-semibold transition-transform duration-300 hover:scale-105 hover:shadow-md"
+        >
+          Resume
+        </a>
+      </li>
     </ul>
   </div>
 );

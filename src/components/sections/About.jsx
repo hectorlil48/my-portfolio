@@ -60,16 +60,14 @@ const About = () => {
           {/* Download Resume */}
           <div className="flex items-center justify-center transition-all duration-300 lg:justify-start">
             <a
-              href="/resume.pdf"
+              href="public/Resume 2.0.pdf"
               download
               aria-label="Download resume"
               className="group bg-primary text-main-btn inline-block rounded-xl p-4 text-lg font-semibold transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md"
             >
               <div className="flex items-center gap-2">
                 <Download className="h-5 w-5 stroke-[2.5] transition-transform group-hover:rotate-12" />
-                <span className="leading-none">
-                  Download R&eacute;sum&eacute;
-                </span>
+                <span className="leading-none">Download Resume</span>
               </div>
             </a>
           </div>
