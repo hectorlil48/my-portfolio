@@ -8,7 +8,7 @@ const Journey = () => {
   const data = activeTab === "education" ? educationData : workData;
 
   return (
-    <section id="journey" className="mx-auto max-w-6xl px-6 py-24">
+    <section id="journey" className="mx-auto max-w-6xl px-6 py-20">
       <header className="mb-8">
         <div className="mb-6">
           <h2 className="text-heading mb-[6px] text-4xl font-bold transition-colors duration-300">
