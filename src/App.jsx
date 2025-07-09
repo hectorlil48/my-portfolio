@@ -5,7 +5,7 @@ import Skills from "./components/sections/Skill/Skills";
 import Projects from "./components/sections/Projects";
 import Journey from "./components/sections/Journey/Journey";
 import Contact from "./components/sections/Contact/Contact";
-import BackToTopButton from "./components/common/BackToTopButton";
+import Footer from "./components/sections/Footer";
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
         <Contact />
       </main>
 
-      <BackToTopButton />
+      <Footer />
     </div>
   );
 };
