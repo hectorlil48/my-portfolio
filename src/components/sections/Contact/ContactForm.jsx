@@ -44,7 +44,11 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
     >
       {/* Hidden input for Web3Forms API key */}
-      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+      <input
+        type="hidden"
+        name="apikey"
+        value="9936b7e9-c2c4-4198-9e6d-cb168c691908"
+      />
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {/* Name */}
