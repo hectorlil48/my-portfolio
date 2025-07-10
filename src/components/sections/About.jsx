@@ -60,7 +60,7 @@ const About = () => {
           {/* Download Resume */}
           <div className="flex items-center justify-center transition-all duration-300 lg:justify-start">
             <a
-              href="public/Resume 2.0.pdf"
+              href="./Resume2.0.pdf"
               download
               aria-label="Download resume"
               className="group bg-primary text-main-btn inline-block rounded-xl p-4 text-lg font-semibold transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md"

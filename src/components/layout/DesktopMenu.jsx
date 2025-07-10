@@ -8,7 +8,7 @@ const DesktopMenu = ({ activeId }) => (
 
     <li>
       <a
-        href="public/Resume 2.0.pdf"
+        href="./Resume2.0.pdf"
         download
         aria-label="Download resume"
         className="bg-primary text-main-btn rounded-lg px-3 py-[8px] text-sm font-semibold transition-transform duration-300 hover:scale-105 hover:shadow-md"
