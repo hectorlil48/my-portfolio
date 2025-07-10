@@ -1,8 +1,13 @@
 // components/About.jsx
 import { Download, FileText } from "lucide-react";
 import { motion } from "framer-motion";
+import { toast } from "sonner";
 
 const About = () => {
+  const handleDownload = () => {
+    toast.success("Downloading résumé...");
+  };
+
   return (
     <section id="about" className="mx-auto max-w-6xl px-6 py-20">
       <header className="mb-12 lg:mb-14">
@@ -62,6 +67,7 @@ const About = () => {
             <a
               href="./Resume2.0.pdf"
               download
+              onClick={handleDownload}
               aria-label="Download resume"
               className="group bg-primary text-main-btn inline-block rounded-xl p-4 text-lg font-semibold transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md"
             >

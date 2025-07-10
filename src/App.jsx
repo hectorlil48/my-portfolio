@@ -7,6 +7,7 @@ import Journey from "./components/sections/Journey/Journey";
 import Contact from "./components/sections/Contact/Contact";
 import Footer from "./components/sections/Footer";
 import BackToTopButton from "./components/common/BackToTopButton";
+import { Toaster } from "sonner";
 
 const App = () => {
   return (
@@ -22,8 +23,10 @@ const App = () => {
       </main>
 
       <BackToTopButton />
-
       <Footer />
+
+      {/* 👇 Toast system */}
+      <Toaster position="bottom-right" richColors />
     </div>
   );
 };
