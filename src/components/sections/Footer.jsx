@@ -6,12 +6,26 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} Hector Ramirez. All rights reserved.
         </p>
 
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="text-primary text-sm hover:underline"
-        >
-          ↑ Back to Top
-        </button>
+        <p className="text-muted text-sm">
+          Built with{" "}
+          <a
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary font-medium hover:underline"
+          >
+            React
+          </a>{" "}
+          &{" "}
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary font-medium hover:underline"
+          >
+            Tailwind CSS
+          </a>
+        </p>
       </div>
     </footer>
   );

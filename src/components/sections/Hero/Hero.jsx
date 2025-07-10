@@ -9,8 +9,8 @@ const Hero = () => {
       className="mx-auto flex min-h-screen max-w-6xl flex-col items-center gap-20 px-6 lg:flex-row lg:gap-10 lg:px-8"
     >
       <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
         className="lg:flex-1"
@@ -19,8 +19,8 @@ const Hero = () => {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true }}
         className="lg:flex-1"

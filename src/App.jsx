@@ -6,6 +6,7 @@ import Projects from "./components/sections/Projects";
 import Journey from "./components/sections/Journey/Journey";
 import Contact from "./components/sections/Contact/Contact";
 import Footer from "./components/sections/Footer";
+import BackToTopButton from "./components/common/BackToTopButton";
 
 const App = () => {
   return (
@@ -19,6 +20,8 @@ const App = () => {
         <Journey />
         <Contact />
       </main>
+
+      <BackToTopButton />
 
       <Footer />
     </div>
