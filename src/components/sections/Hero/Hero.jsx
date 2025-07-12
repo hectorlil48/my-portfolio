@@ -8,7 +8,15 @@ const Hero = () => {
       id="home"
       className="mx-auto flex min-h-screen max-w-6xl flex-col items-center gap-20 px-6 lg:flex-row lg:gap-10 lg:px-8"
     >
-      <Intro />
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="lg:flex-1"
+      >
+        <Intro />
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0, y: -50 }}
