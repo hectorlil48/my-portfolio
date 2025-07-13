@@ -9,7 +9,7 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="mx-auto max-w-6xl px-6 py-20">
+    <section id="about" className="mx-auto min-h-[70vh] max-w-6xl px-6 py-20">
       <header className="mb-12 lg:mb-14">
         <div>
           <h2 className="text-heading mb-[6px] text-4xl font-bold transition-colors duration-300">

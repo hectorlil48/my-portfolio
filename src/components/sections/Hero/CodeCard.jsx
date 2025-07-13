@@ -4,7 +4,7 @@ const CodeCard = () => {
   return (
     <aside
       role="presentation"
-      className="bg-code-bg w-full max-w-md rounded-2xl border border-gray-200 p-6 shadow-sm shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] transition-colors duration-300"
+      className="bg-code-bg w-full max-w-lg rounded-2xl border border-gray-200 p-6 shadow-sm shadow-[rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0)_0px_0px_0px_0px,rgba(0,0,0,0.05)_0px_1px_2px_0px] transition-colors duration-300"
     >
       <div className="mb-6 flex items-center justify-between">
         <div className="flex space-x-2">

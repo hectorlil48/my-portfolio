@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import ContactHeader from "./ContactHeader";
 import ContactInfo from "./ContactInfo";
 import ContactLinks from "./ContactLinks";
@@ -6,7 +5,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <section id="contact" className="mx-auto max-w-6xl px-6 py-20">
+    <section id="contact" className="mx-auto min-h-screen max-w-6xl px-6 py-20">
       <ContactHeader />
 
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
