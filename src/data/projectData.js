@@ -3,7 +3,7 @@ const projectList = [
     title: "My Portfolio",
     description:
       "A fully responsive portfolio built with React and Tailwind CSS to showcase my skills, experience, and projects. It features a light/dark theme toggle, smooth animations, and a clean, accessible UI optimized for both desktop and mobile.",
-    image: "./portfolio-desktop-sc.png",
+    image: "/portfolio-desktop-sc.png",
     liveLink: "https://hectorlil48.github.io/my-portfolio/",
     githubLink: "https://github.com/hectorlil48/my-portfolio",
     tech: ["React.js", "Tailwind CSS", "HTML & JSX", "Responsive Design"],
