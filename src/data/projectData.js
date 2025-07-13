@@ -13,8 +13,8 @@ const projectList = [
     description:
       "An interactive quiz app built with React that allows users to test their knowledge across various topics. Features include real-time feedback, keyboard navigation, dark mode support, and a responsive interface for seamless UX.",
     image: "./frontend-quiz-app-sc.png",
-    liveLink: "https://hectorlil48.github.io/frontend-quiz-app/",
-    githubLink: "https://github.com/hectorlil48/frontend-quiz-app",
+    liveLink: "https://hectorlil48.github.io/hectors-frontend-quiz-app/",
+    githubLink: "https://github.com/hectorlil48/hectors-frontend-quiz-app",
     tech: ["React.js", "Dark Mode", "HTML & JSX", "Responsive Design"],
   },
   {
