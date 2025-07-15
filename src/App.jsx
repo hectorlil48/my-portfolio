@@ -7,11 +7,14 @@ import Journey from "./components/sections/Journey/Journey";
 import Contact from "./components/sections/Contact/Contact";
 import Footer from "./components/sections/Footer";
 import BackToTopButton from "./components/common/BackToTopButton";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 import { Toaster } from "sonner";
 
 const App = () => {
   return (
     <div className="font-inter bg-background dark:bg-background min-h-screen transition-colors duration-300">
+      <GoogleAnalytics />
+
       <Navbar />
       <main className="pt-[90px] lg:pt-0">
         <Hero />
