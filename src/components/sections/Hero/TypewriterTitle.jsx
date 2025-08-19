@@ -14,8 +14,8 @@ const TypewriterTitle = () => {
         options={{
           strings: [
             "Full-Stack Developer",
-            "React Enthusiast",
-            "Builder of Modern Web Apps",
+            "React & HTML/CSS Expert",
+            "Responsive Design Advocate",
             "Learning Never Stops",
           ],
           autoStart: true,

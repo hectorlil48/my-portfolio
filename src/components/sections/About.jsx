@@ -51,15 +51,14 @@ const About = () => {
             </h3>
           </div>
           <p className="text-foreground mb-8">
-            I’m a self-taught full-stack developer skilled in the MERN stack and
-            Tailwind CSS, building clean, responsive web apps with real-world
-            impact. Before tech, I worked long, demanding shifts as a forklift
-            driver, which taught me discipline, problem-solving, and resilience.
-            I balanced that with learning to code and building projects, pushing
-            through burnout. Now, I’m excited to join a team where I can grow,
-            contribute, and keep leveling up. Outside of coding, I love working
-            out, gaming, hiking, and traveling — all things that keep me
-            energized and inspired.
+            I’m a front-end developer skilled in HTML5, CSS3, JavaScript, and
+            React, passionate about building responsive, accessible, and
+            performance-optimized web applications. I also have experience with
+            Tailwind CSS, Bootstrap, and SEO best practices. Before tech, I
+            worked long, demanding shifts as a forklift driver, which taught me
+            discipline, problem-solving, and resilience. Now, I’m excited to
+            contribute to a global team where I can turn creative concepts into
+            pixel-perfect websites.
           </p>
 
           {/* Download Resume */}

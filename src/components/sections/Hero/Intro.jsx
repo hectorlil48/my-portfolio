@@ -17,9 +17,9 @@ const Intro = () => {
 
       <TypewriterTitle />
 
-      <p className="text-foreground mx-auto mt-4 mb-8 max-w-md lg:mx-0">
-        I build responsive, full-stack web apps with React, Node.js, and Django.
-        Focused on clean code, modern UI, and solving real problems.
+      <p className="text-foreground mx-auto mt-2 mb-8 max-w-md lg:mx-0">
+        I specialize in HTML5, CSS3, and JavaScript to build fast, responsive
+        websites with modern UI and seamless user experiences.
       </p>
 
       <CTAButtons />
